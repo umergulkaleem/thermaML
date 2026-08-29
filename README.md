@@ -41,12 +41,7 @@ ThermaML is powered directly by environmental observations retrieved via the **F
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-### API Ingestion & Target Definition
-- **API Endpoint**: `POST /v1/environment` / `GET /v1/heatmaps` with tile latitude/longitude coordinates and date parameters.
-- **Target Construction**: Derived from the mean of the exact date's 24-hour valid `apparent_temperature_celsius` readings per tile. (The static `locations[0]["temperature"]` geographic attribute is excluded as an ML target).
-- **Features Extracted**: Mean, min, and max aggregations of hourly solar irradiance, ambient air temperature, relative humidity, and wind speed.
 
----
 
 ## Research Question & Scope
 
