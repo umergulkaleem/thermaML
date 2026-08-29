@@ -1,0 +1,417 @@
+{
+  "heatmap": {
+    "path": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-07-15_60m_tcm.json",
+    "feature_count": 845
+  },
+  "environment": {
+    "path": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_20_points.json",
+    "result_count": 9,
+    "records": [
+      {
+        "tile_id": 414,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 420,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 426,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 432,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 407,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 575,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 581,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 587,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      },
+      {
+        "tile_id": 593,
+        "location_count": 1,
+        "locations": [
+          {
+            "distance_from_tile_center_km": 0.0,
+            "parameter_count": 15,
+            "hour_count": 24,
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "heat_index_celsius": 0,
+              "apparent_temperature_celsius": 0,
+              "relative_humidity_percent": 0,
+              "precipitation_mm": 0,
+              "cloud_cover_octas": 0,
+              "wet_bulb_temperature_celsius": 0,
+              "air_quality:idx": 0,
+              "air_quality_pm2p5:idx": 0,
+              "air_quality_pm10:idx": 0,
+              "air_quality_no2:idx": 0,
+              "aqi_us_co": 0,
+              "air_quality_o3:idx": 0,
+              "air_quality_so2:idx": 0,
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

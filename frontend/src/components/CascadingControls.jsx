@@ -19,6 +19,7 @@ export const CascadingControls = () => {
     availableTiles,
     selectedTileId,
     setSelectedTileId,
+    availableModels,
     selectedModel,
     setSelectedModel,
     loading,
@@ -157,10 +158,18 @@ export const CascadingControls = () => {
             className="form-select"
             value={selectedModel}
             onChange={(e) => setSelectedModel(e.target.value)}
+            disabled={loading.init || availableModels.length === 0}
             aria-label="Select ML regression model"
           >
-            <option value="random_forest">Random Forest (Ensemble)</option>
-            <option value="linear_regression">Linear Regression (Parametric)</option>
+            {availableModels.map(model => (
+              <option key={model} value={model}>
+                {model === 'random_forest'
+                  ? 'Random Forest (Ensemble)'
+                  : model === 'linear_regression'
+                  ? 'Linear Regression (Parametric)'
+                  : model}
+              </option>
+            ))}
           </select>
         </div>
       </div>

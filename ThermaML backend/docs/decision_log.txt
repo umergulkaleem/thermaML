@@ -1,0 +1,30 @@
+[2026-08-23]
+Decision: Current ML models provide baseline daily temperature only.
+Reason: The dataset contains no historical intervention labels.
+
+[2026-08-23]
+Decision: Tree canopy, cool roofs, and cool pavement are scenario variables, not ML features.
+Reason: Their effects are supplied from external Phoenix evidence and are not learned causally by the models.
+
+[2026-08-23]
+Decision: Cool pavement is represented as a surface-temperature range.
+Reason: Phoenix evidence reports pavement surface reduction, not an equivalent air-temperature reduction.
+
+[2026-08-23]
+Decision: The scenario layer uses feature version features_v1 and remains separate from model modules.
+Reason: The same scenario engine must work with current and future models without changing model features.
+
+[2026-08-23]
+Decision: Lightweight GNN implementation was dependency-blocked.
+Reason: PyTorch and PyTorch Geometric are not installed, and installing a large new dependency was outside scope.
+
+[2026-08-23]
+Decision: Six existing Phoenix tile coordinates were verified but no graph artifact was created.
+Reason: Graph construction without an available tensor/graph runtime would not produce a runnable model or valid evaluation.
+
+[2026-08-23]
+Decision: The backend was finalized around a frontend-ready inference contract supporting model selection, model comparison, date/tile selection, and heat-mitigation scenarios.
+
+[2026-08-23]
+Decision: Tree, roof, and pavement effects are not claimed to be independent or additive in nature.
+Reason: The combined air-temperature output is a simplified planning approximation with interactions unmodeled.

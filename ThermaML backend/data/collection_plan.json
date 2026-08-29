@@ -1,0 +1,181 @@
+{
+  "status": "planning_only_no_api_requests_made",
+  "data_resolution": {
+    "target": "date x spatial tile",
+    "heatmap_observation": "scalar average_temperature, min_temperature, max_temperature per tile/date",
+    "hourly_heatmap_targets_available": false,
+    "research_limitation": "The available FortyGuard heatmap response provides date-scoped scalar temperature summaries per spatial cell rather than hourly hyperlocal target observations."
+  },
+  "credit_safety": {
+    "persisted_usage_source": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\processed\\api_usage_log.jsonl",
+    "persisted_credits_used_before_plan": 95980,
+    "persisted_usage_recorded_at_utc": "2026-08-21T21:06:14.658594+05:00",
+    "preferred_cumulative_ceiling": 500000,
+    "hard_project_ceiling": 1000000,
+    "known_full_phoenix_heatmap_cost": 4220,
+    "known_environment_request_cost": 2900,
+    "planned_new_credits": 190380,
+    "projected_cumulative_usage": 286360,
+    "remaining_preferred_budget_after_plan": 213640,
+    "safe_under_preferred_ceiling": true,
+    "cost_status": "conditional_until_dates_are_verified"
+  },
+  "phoenix": {
+    "target_date_count": 20,
+    "verified_dates": [
+      "2023-07-15"
+    ],
+    "historical_date_availability_verified": false,
+    "new_dates_required": 19,
+    "candidate_dates": [],
+    "date_availability_blocker": "Historical date availability is not established from local evidence; no dates are invented and no exploratory request is authorized.",
+    "heatmap_request_count_if_dates_are_verified": 19,
+    "heatmap_request_cost": 4220,
+    "heatmap_credits_if_dates_are_verified": 80180,
+    "spatial_tile_count_per_date": 845,
+    "existing_tile_date_observations": 845,
+    "new_tile_date_observations_if_complete": 16055,
+    "total_tile_date_observations_if_complete": 16900
+  },
+  "environment": {
+    "cached_same_date_records": 9,
+    "sampling_strategy": "Two representative locations per new date: central tile 426 and edge tile 7. Preserve environmental data as sampled/regional context; do not treat it as 60 m resolution for every heatmap tile.",
+    "sample_tile_ids": [
+      426,
+      7
+    ],
+    "samples_per_new_date": 2,
+    "new_environment_request_count_if_dates_are_verified": 38,
+    "environment_request_cost": 2900,
+    "environment_credits_if_dates_are_verified": 110200,
+    "valid_shared_variables": [
+      "air_quality:idx",
+      "air_quality_no2:idx",
+      "air_quality_o3:idx",
+      "air_quality_pm10:idx",
+      "air_quality_pm2p5:idx",
+      "air_quality_so2:idx",
+      "apparent_temperature_celsius",
+      "aqi_us_co",
+      "cloud_cover_octas",
+      "precipitation_mm",
+      "relative_humidity_percent",
+      "wet_bulb_temperature_celsius"
+    ],
+    "spatially_varying_variables": [
+      "heat_index_celsius"
+    ],
+    "excluded_all_null_variables": [
+      "methane_ppb",
+      "co2_ppm"
+    ],
+    "aggregation_policy": {
+      "continuous_shared_variables": "daily mean, with source hourly series preserved",
+      "precipitation_mm": "daily sum, with source hourly series preserved",
+      "heat_index_celsius": "daily maximum and daily mean from the two sampled locations",
+      "spatial_sampling": "retain both sampled-location summaries; do not broadcast as independent tile measurements"
+    },
+    "spatial_evidence": {
+      "air_quality:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "air_quality_no2:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "air_quality_o3:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "air_quality_pm10:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "air_quality_pm2p5:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "air_quality_so2:idx": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "apparent_temperature_celsius": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "aqi_us_co": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "cloud_cover_octas": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "co2_ppm": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "heat_index_celsius": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 34,
+        "max_absolute_difference": 0.19999999999999574
+      },
+      "methane_ppb": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "precipitation_mm": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "relative_humidity_percent": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      },
+      "wet_bulb_temperature_celsius": {
+        "comparisons": 36,
+        "nonidentical_comparisons": 0,
+        "max_absolute_difference": 0.0
+      }
+    }
+  },
+  "splits": {
+    "method": "chronological by date, never random row splitting",
+    "provisional_date_counts_for_20_dates": {
+      "train": 12,
+      "validation": 4,
+      "test": 4
+    },
+    "date_ranges": null,
+    "status": "Ranges remain unresolved until 19 additional dates are verified and ordered."
+  },
+  "expected_models": [
+    "Linear Regression",
+    "Random Forest",
+    "lightweight geographic-neighbor GNN"
+  ],
+  "tucson": {
+    "status": "blocked; do not collect",
+    "reason": "No verified Tucson AOI or measured Tucson heatmap cost."
+  },
+  "blocking_unknowns": [
+    "Historical Phoenix date availability is unverified.",
+    "Exact date list and chronological split ranges are therefore unresolved.",
+    "Environmental sampling is a documented methodological choice, not a demonstrated 60 m environmental field."
+  ],
+  "next_step": "Verify a proposed Phoenix date list through documented API support or an explicitly authorized non-collection mechanism, then recalculate this plan from the persisted usage before any request."
+}

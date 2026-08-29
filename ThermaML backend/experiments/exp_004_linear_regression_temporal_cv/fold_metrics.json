@@ -1,0 +1,134 @@
+[
+  {
+    "fold_id": 1,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-09-28",
+    "test_start_date": "2023-10-01",
+    "test_end_date": "2023-10-15",
+    "train_sample_count": 107,
+    "test_sample_count": 10,
+    "test_date_count": 2,
+    "test_target_mean": 39.42286,
+    "test_target_std": 0.02861880500649935,
+    "linear_regression": {
+      "mae": 18.064998657453916,
+      "rmse": 18.59597940225896,
+      "r2": -469128.35848326
+    },
+    "naive_baseline": {
+      "mae": 0.02337700934579203,
+      "rmse": 0.02716340583667266,
+      "r2": -0.0009743387317573404
+    }
+  },
+  {
+    "fold_id": 2,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-10-15",
+    "test_start_date": "2023-10-28",
+    "test_end_date": "2023-11-01",
+    "train_sample_count": 117,
+    "test_sample_count": 7,
+    "test_date_count": 2,
+    "test_target_mean": 39.42695714285714,
+    "test_target_std": 0.029835373699848337,
+    "linear_regression": {
+      "mae": 0.8898789274578566,
+      "rmse": 1.05566685435058,
+      "r2": -1459.6211920881997
+    },
+    "naive_baseline": {
+      "mae": 0.02551355311355406,
+      "rmse": 0.027821244676393846,
+      "r2": -0.01446469431677988
+    }
+  },
+  {
+    "fold_id": 3,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-11-01",
+    "test_start_date": "2023-11-15",
+    "test_end_date": "2023-11-28",
+    "train_sample_count": 124,
+    "test_sample_count": 10,
+    "test_date_count": 2,
+    "test_target_mean": 39.42286,
+    "test_target_std": 0.02861880500649935,
+    "linear_regression": {
+      "mae": 0.09390247112785773,
+      "rmse": 0.09938752358895907,
+      "r2": -12.400414695033765
+    },
+    "naive_baseline": {
+      "mae": 0.023330967741934217,
+      "rmse": 0.027167240594114,
+      "r2": -0.001256981104678978
+    }
+  },
+  {
+    "fold_id": 4,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-11-28",
+    "test_start_date": "2023-12-01",
+    "test_end_date": "2023-12-15",
+    "train_sample_count": 134,
+    "test_sample_count": 9,
+    "test_date_count": 2,
+    "test_target_mean": 39.421011111111106,
+    "test_target_std": 0.029714619484542217,
+    "linear_regression": {
+      "mae": 0.5440315863028091,
+      "rmse": 0.7177161230526059,
+      "r2": -655.3229353656875
+    },
+    "naive_baseline": {
+      "mae": 0.02420530679934056,
+      "rmse": 0.028148848991776776,
+      "r2": -0.009563076671648574
+    }
+  },
+  {
+    "fold_id": 5,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-12-15",
+    "test_start_date": "2023-12-28",
+    "test_end_date": "2024-01-01",
+    "train_sample_count": 143,
+    "test_sample_count": 8,
+    "test_date_count": 2,
+    "test_target_mean": 39.42765,
+    "test_target_std": 0.027691618123283756,
+    "linear_regression": {
+      "mae": 0.2196019219405061,
+      "rmse": 0.239179045017773,
+      "r2": -84.25925514921876
+    },
+    "naive_baseline": {
+      "mae": 0.02346083916084396,
+      "rmse": 0.02622119494522222,
+      "r2": -0.024708262045449958
+    }
+  },
+  {
+    "fold_id": 6,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2024-01-01",
+    "test_start_date": "2024-01-15",
+    "test_end_date": "2024-01-28",
+    "train_sample_count": 151,
+    "test_sample_count": 9,
+    "test_date_count": 2,
+    "test_target_mean": 39.421011111111106,
+    "test_target_std": 0.029714619484542217,
+    "linear_regression": {
+      "mae": 0.03677690915190763,
+      "rmse": 0.0440924502454768,
+      "r2": -1.4770834807066455
+    },
+    "naive_baseline": {
+      "mae": 0.024190875643858096,
+      "rmse": 0.028153095575649066,
+      "r2": -0.00986770849993146
+    }
+  }
+]

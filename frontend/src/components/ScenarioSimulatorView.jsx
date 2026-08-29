@@ -14,16 +14,19 @@ import {
 
 export const ScenarioSimulatorView = () => {
   const {
+    selectedModel,
+    selectedDate,
     selectedTileId,
     scenarioInputs,
     setScenarioInputs,
     scenarioResult,
+    fetchScenarioSimulation,
     loading
   } = useThermaML();
 
   const [activePreset, setActivePreset] = useState(null);
 
-  // Helper for updating slider/quantity
+  // Helper for manual quantity inputs
   const handleInputChange = (field, value) => {
     setActivePreset(null);
     setScenarioInputs(prev => ({
@@ -32,65 +35,123 @@ export const ScenarioSimulatorView = () => {
     }));
   };
 
+  // Helper for slider changes: scales quantities proportionally if user adjusts sliders
+  const handleSliderChange = (field, val) => {
+    setActivePreset(null);
+    setScenarioInputs(prev => {
+      const next = { ...prev, [field]: val };
+      if (field === 'canopy_pct') {
+        next.number_of_trees = val === 0 ? 0 : Math.round(val * 8);
+      } else if (field === 'roof_pct') {
+        next.roof_area_sqft = val === 0 ? 0 : Math.round(val * 800);
+      } else if (field === 'pavement_pct') {
+        next.paved_area_sqft = val === 0 ? 0 : Math.round(val * 1750);
+      }
+      return next;
+    });
+  };
+
   // Preset scenarios
   const applyPreset = (presetType) => {
     setActivePreset(presetType);
+    let newInputs;
     switch (presetType) {
       case 'pocket_park':
-        setScenarioInputs({
+        newInputs = {
           canopy_pct: 20,
           roof_pct: 0,
           pavement_pct: 10,
           number_of_trees: 160,
-          roof_area_sqft: '',
-          paved_area_sqft: 15000
-        });
+          roof_area_sqft: 0,
+          paved_area_sqft: 15000,
+        };
         break;
       case 'cool_roofs':
-        setScenarioInputs({
+        newInputs = {
           canopy_pct: 5,
           roof_pct: 45,
           pavement_pct: 0,
           number_of_trees: 30,
           roof_area_sqft: 35000,
-          paved_area_sqft: ''
-        });
+          paved_area_sqft: 0,
+        };
         break;
       case 'district_resilience':
-        setScenarioInputs({
+        newInputs = {
           canopy_pct: 25,
           roof_pct: 35,
           pavement_pct: 30,
           number_of_trees: 220,
           roof_area_sqft: 40000,
-          paved_area_sqft: 50000
-        });
+          paved_area_sqft: 50000,
+        };
         break;
       case 'reset':
       default:
         setActivePreset(null);
-        setScenarioInputs({
+        newInputs = {
           canopy_pct: 0,
           roof_pct: 0,
           pavement_pct: 0,
-          number_of_trees: '',
-          roof_area_sqft: '',
-          paved_area_sqft: ''
-        });
+          number_of_trees: 0,
+          roof_area_sqft: 0,
+          paved_area_sqft: 0,
+        };
         break;
     }
+    setScenarioInputs(newInputs);
+    fetchScenarioSimulation(selectedModel, selectedDate, selectedTileId, newInputs);
   };
 
   const baselineTemp = scenarioResult?.baseline_temperature_c ?? 39.4;
   const postTemp = scenarioResult?.post_intervention_temperature_c ?? 37.8;
   const totalCooling = scenarioResult?.total_ambient_cooling_c ?? 1.6;
 
+  const baselineTempDisplay = typeof baselineTemp === 'number' ? baselineTemp.toFixed(3) : baselineTemp;
+  const postTempDisplay = typeof postTemp === 'number' ? postTemp.toFixed(3) : postTemp;
+  const totalCoolingDisplay = typeof totalCooling === 'number' ? totalCooling.toFixed(3) : totalCooling;
+
   const interventions = scenarioResult?.interventions || {};
   const canopyEffect = interventions.tree_canopy?.ambient_cooling_c ?? 0.68;
   const roofEffect = interventions.cool_roof?.ambient_cooling_c ?? 0.70;
   const pavementSurfaceEffect = interventions.cool_pavement?.surface_temp_reduction_c ?? 7.0;
 
+  const canopyEffectDisplay = typeof canopyEffect === 'number' ? canopyEffect.toFixed(3) : canopyEffect;
+  const roofEffectDisplay = typeof roofEffect === 'number' ? roofEffect.toFixed(3) : roofEffect;
+  const pavementSurfaceEffectDisplay = typeof pavementSurfaceEffect === 'number' ? pavementSurfaceEffect.toFixed(3) : pavementSurfaceEffect;
+
   const costs = scenarioResult?.costs || {};
+
+  // Live calculation of costs based on active inputs
+  const parseNum = (val) => {
+    if (val === null || val === undefined || val === '') return null;
+    const num = Number(val);
+    return isNaN(num) || num < 0 ? null : num;
+  };
+
+  const canopyPct = Number(scenarioInputs.canopy_pct || 0);
+  const roofPct = Number(scenarioInputs.roof_pct || 0);
+  const pavementPct = Number(scenarioInputs.pavement_pct || 0);
+
+  const treeCount = parseNum(scenarioInputs.number_of_trees);
+  const roofArea = parseNum(scenarioInputs.roof_area_sqft);
+  const pavedArea = parseNum(scenarioInputs.paved_area_sqft);
+
+  const currentTreeCost = canopyPct === 0
+    ? 0
+    : (treeCount !== null ? treeCount * 1088 : (costs.tree_canopy_usd ?? null));
+  const currentRoofCost = roofPct === 0
+    ? 0
+    : (roofArea !== null ? roofArea * 1.15 : (costs.cool_roof_usd ?? null));
+  const currentPavementCost = pavementPct === 0
+    ? 0
+    : (pavedArea !== null ? pavedArea * 3.0 : (costs.cool_pavement_usd ?? null));
+
+  const hasAnyCost = currentTreeCost !== null || currentRoofCost !== null || currentPavementCost !== null;
+  const currentTotalCost = hasAnyCost
+    ? (currentTreeCost || 0) + (currentRoofCost || 0) + (currentPavementCost || 0)
+    : null;
+
   const formatCost = (val) => {
     if (val === null || val === undefined) return <span className="cost-null-tag">N/A (quantities omitted)</span>;
     return `$${val.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
@@ -114,6 +175,15 @@ export const ScenarioSimulatorView = () => {
           >
             <RotateCcw size={13} aria-hidden="true" />
             <span>Reset</span>
+          </button>
+          <button
+            className="btn btn-primary"
+            style={{ fontSize: '12px', padding: '6px 14px' }}
+            onClick={() => fetchScenarioSimulation(selectedModel, selectedDate, selectedTileId, scenarioInputs)}
+            disabled={loading.scenario}
+            aria-label="Run scenario simulation"
+          >
+            {loading.scenario ? 'Running...' : '▶ Run Simulation'}
           </button>
         </div>
 
@@ -162,7 +232,7 @@ export const ScenarioSimulatorView = () => {
               max="100"
               step="1"
               value={scenarioInputs.canopy_pct}
-              onChange={(e) => handleInputChange('canopy_pct', Number(e.target.value))}
+              onChange={(e) => handleSliderChange('canopy_pct', Number(e.target.value))}
               aria-label="Tree Canopy Cover percentage"
             />
             <span className="slider-val-badge tabular-nums">+{scenarioInputs.canopy_pct}%</span>
@@ -179,7 +249,7 @@ export const ScenarioSimulatorView = () => {
               value={scenarioInputs.number_of_trees ?? ''}
               onChange={(e) => handleInputChange('number_of_trees', e.target.value === '' ? null : Number(e.target.value))}
             />
-            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $350 / mature tree</span>
+            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $1,088 / mature tree</span>
           </div>
         </div>
 
@@ -200,7 +270,7 @@ export const ScenarioSimulatorView = () => {
               max="100"
               step="1"
               value={scenarioInputs.roof_pct}
-              onChange={(e) => handleInputChange('roof_pct', Number(e.target.value))}
+              onChange={(e) => handleSliderChange('roof_pct', Number(e.target.value))}
               aria-label="Cool Roof Coating percentage"
             />
             <span className="slider-val-badge tabular-nums" style={{ color: '#38bdf8', borderColor: 'rgba(56, 189, 248, 0.4)', background: 'rgba(56, 189, 248, 0.12)' }}>
@@ -219,7 +289,7 @@ export const ScenarioSimulatorView = () => {
               value={scenarioInputs.roof_area_sqft ?? ''}
               onChange={(e) => handleInputChange('roof_area_sqft', e.target.value === '' ? null : Number(e.target.value))}
             />
-            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $1.85 / sqft</span>
+            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $1.15 / sqft</span>
           </div>
         </div>
 
@@ -240,7 +310,7 @@ export const ScenarioSimulatorView = () => {
               max="100"
               step="1"
               value={scenarioInputs.pavement_pct}
-              onChange={(e) => handleInputChange('pavement_pct', Number(e.target.value))}
+              onChange={(e) => handleSliderChange('pavement_pct', Number(e.target.value))}
               aria-label="Cool Pavement percentage"
             />
             <span className="slider-val-badge tabular-nums" style={{ color: '#fbbf24', borderColor: 'rgba(245, 158, 11, 0.4)', background: 'rgba(245, 158, 11, 0.12)' }}>
@@ -259,7 +329,7 @@ export const ScenarioSimulatorView = () => {
               value={scenarioInputs.paved_area_sqft ?? ''}
               onChange={(e) => handleInputChange('paved_area_sqft', e.target.value === '' ? null : Number(e.target.value))}
             />
-            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $0.75 / sqft</span>
+            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>@ $3.00 / sqft</span>
           </div>
         </div>
       </div>
@@ -274,20 +344,20 @@ export const ScenarioSimulatorView = () => {
         {/* Thermal Differential Banner */}
         <div className="thermal-comparison-banner">
           <div className="temp-pillar">
-            <h3>Observed Baseline</h3>
-            <div className="temp-val tabular-nums">{baselineTemp}°C</div>
+            <h3>Predicted Baseline</h3>
+            <div className="temp-val tabular-nums">{baselineTempDisplay}°C</div>
             <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Tile #{selectedTileId}</span>
           </div>
 
           <div className="temp-diff-badge">
             <TrendingDown size={20} aria-hidden="true" />
-            <span className="tabular-nums">-{totalCooling}°C</span>
+            <span className="tabular-nums">-{totalCoolingDisplay}°C</span>
             <span style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Air Cooling</span>
           </div>
 
           <div className="temp-pillar">
             <h3>Post-Intervention</h3>
-            <div className="temp-val cooled tabular-nums">{postTemp}°C</div>
+            <div className="temp-val cooled tabular-nums">{postTempDisplay}°C</div>
             <span style={{ fontSize: '11px', color: '#34d399' }}>Simulated Ambient</span>
           </div>
         </div>
@@ -296,19 +366,19 @@ export const ScenarioSimulatorView = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
           <div className="stat-box">
             <div className="stat-box-title" style={{ color: '#34d399' }}>Canopy Air Delta</div>
-            <div className="stat-box-value tabular-nums" style={{ color: '#34d399' }}>-{canopyEffect}°C</div>
+            <div className="stat-box-value tabular-nums" style={{ color: '#34d399' }}>-{canopyEffectDisplay}°C</div>
             <div className="stat-box-sub">Evapotranspiration</div>
           </div>
 
           <div className="stat-box">
             <div className="stat-box-title" style={{ color: '#38bdf8' }}>Cool Roof Delta</div>
-            <div className="stat-box-value tabular-nums" style={{ color: '#38bdf8' }}>-{roofEffect}°C</div>
+            <div className="stat-box-value tabular-nums" style={{ color: '#38bdf8' }}>-{roofEffectDisplay}°C</div>
             <div className="stat-box-sub">Albedo reflection</div>
           </div>
 
           <div className="stat-box">
             <div className="stat-box-title" style={{ color: '#fbbf24' }}>Pavement Surface Delta</div>
-            <div className="stat-box-value tabular-nums" style={{ color: '#fbbf24' }}>-{pavementSurfaceEffect}°C</div>
+            <div className="stat-box-value tabular-nums" style={{ color: '#fbbf24' }}>-{pavementSurfaceEffectDisplay}°C</div>
             <div className="stat-box-sub">Direct surface temp</div>
           </div>
         </div>
@@ -333,24 +403,30 @@ export const ScenarioSimulatorView = () => {
           </div>
 
           <div className="cost-row">
-            <span style={{ color: 'var(--text-secondary)' }}>Tree Planting & Establishment ({scenarioInputs.number_of_trees || 0} trees)</span>
-            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(costs.tree_canopy_usd)}</span>
+            <span style={{ color: 'var(--text-secondary)' }}>
+              Tree Planting & Establishment ({treeCount !== null ? `${treeCount.toLocaleString()} trees` : 'quantity omitted'})
+            </span>
+            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(currentTreeCost)}</span>
           </div>
 
           <div className="cost-row">
-            <span style={{ color: 'var(--text-secondary)' }}>Cool Roof Coating ({scenarioInputs.roof_area_sqft || 0} sqft @ {scenarioInputs.roof_pct}%)</span>
-            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(costs.cool_roof_usd)}</span>
+            <span style={{ color: 'var(--text-secondary)' }}>
+              Cool Roof Coating ({roofArea !== null ? `${roofArea.toLocaleString()} sqft` : 'area omitted'} @ {scenarioInputs.roof_pct}%)
+            </span>
+            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(currentRoofCost)}</span>
           </div>
 
           <div className="cost-row">
-            <span style={{ color: 'var(--text-secondary)' }}>Cool Pavement Sealcoat ({scenarioInputs.paved_area_sqft || 0} sqft @ {scenarioInputs.pavement_pct}%)</span>
-            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(costs.cool_pavement_usd)}</span>
+            <span style={{ color: 'var(--text-secondary)' }}>
+              Cool Pavement Sealcoat ({pavedArea !== null ? `${pavedArea.toLocaleString()} sqft` : 'area omitted'} @ {scenarioInputs.pavement_pct}%)
+            </span>
+            <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)' }}>{formatCost(currentPavementCost)}</span>
           </div>
 
           <div className="cost-row">
             <span>Total Estimated Capital Investment</span>
             <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)', color: '#34d399', fontSize: '17px' }}>
-              {formatCost(costs.total_estimated_usd)}
+              {formatCost(currentTotalCost)}
             </span>
           </div>
         </div>

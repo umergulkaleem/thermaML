@@ -1,0 +1,34 @@
+{
+  "city": "phoenix",
+  "dates_requested": 30,
+  "successful_dates": 1,
+  "failed_dates": 29,
+  "unique_tiles": 845,
+  "observations_per_tile": 1,
+  "date_range": {
+    "start": "2023-07-15",
+    "end": "2023-07-15"
+  },
+  "dates_by_month": {
+    "2023-07": 1
+  },
+  "temperature_distribution": "available in each validated heatmap record; no aggregation performed by collector",
+  "environmental_coverage": {
+    "locations_per_successful_date": 2,
+    "tile_ids": [
+      426,
+      7
+    ]
+  },
+  "missing_values": "raw environmental nulls preserved; methane_ppb and co2_ppm excluded from modeling",
+  "total_persisted_credits": 95980,
+  "remaining_project_budget": 404020,
+  "chronological_split": {
+    "method": "70/15/15 by sorted successful dates",
+    "train_dates": [],
+    "validation_dates": [],
+    "test_dates": [
+      "2023-07-15"
+    ]
+  }
+}

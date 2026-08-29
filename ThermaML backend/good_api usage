@@ -1,0 +1,72 @@
+PS C:\Users\Me\Desktop\Hackathon\fortyguard\main hackathon\ThermaML backend> python .\data\fetch_and_cache.py
+
+=================================================================
+FETCHING: Phoenix, AZ
+=================================================================
+Date        : 2023-07-15
+Resolution  : 60m
+Analytic    : tcm
+Output      : C:\Users\Me\Desktop\Hackathon\fortyguard\main hackathon\ThermaML backend\data\phoenix\raw\heatmaps\phoenix_2023-07-15_60m_tcm.json
+
+STEP 1: Credit check BEFORE request
+
+=======================================================
+FORTYGUARD CREDIT STATUS
+=======================================================
+Total available : 2,000,000
+Credits used    : 25,320
+Credits left    : 1,974,680
+=======================================================
+
+
+STEP 2: Submitting heatmap request
+Activity ID: fcba76d3-4004-4d74-afb3-42bd66375abd
+
+STEP 3: Waiting for heatmap
+Polling task fcba76d3-4004-4d74-afb3-42bd66375abd (1/30)...
+Current status: processing
+Polling task fcba76d3-4004-4d74-afb3-42bd66375abd (2/30)...
+Current status: processing
+Polling task fcba76d3-4004-4d74-afb3-42bd66375abd (3/30)...
+Current status: processing
+Polling task fcba76d3-4004-4d74-afb3-42bd66375abd (4/30)...
+Current status: processing
+Polling task fcba76d3-4004-4d74-afb3-42bd66375abd (5/30)...
+[SUCCESS] FortyGuard task completed.
+
+STEP 4: Saving raw data
+
+[SUCCESS] Saved 845 tiles.
+
+STEP 5: Credit check AFTER request
+
+=======================================================
+FORTYGUARD CREDIT STATUS
+=======================================================
+Total available : 2,000,000
+Credits used    : 29,540
+Credits left    : 1,970,460
+=======================================================
+
+
+=================================================================
+REQUEST COST
+=================================================================
+Credits before : 25,320
+Credits after  : 29,540
+Credits used   : 4,220
+Tiles returned : 845
+Credits/tile   : 4.9941
+=================================================================
+PS C:\Users\Me\Desktop\Hackathon\fortyguard\main hackathon\ThermaML backend> python .\data\process_models.py 
+
+Processing: phoenix_2023-07-15_60m_tcm.json
+
+============================================================
+PROCESSING COMPLETE
+============================================================
+City       : phoenix
+Files      : 1
+Nodes      : 845
+Output     : C:\Users\Me\Desktop\Hackathon\fortyguard\main hackathon\ThermaML backend\data\phoenix\processed\phoenix_nodes.json
+============================================================

@@ -20,3 +20,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.env
+.env.*
+!.env.example

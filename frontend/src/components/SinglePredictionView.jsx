@@ -21,8 +21,10 @@ export const SinglePredictionView = ({ onNavigateToSimulator }) => {
     loading 
   } = useThermaML();
 
-  const tempC = singlePrediction?.predicted_temperature_c ?? 31.4;
-  const tempF = Number(((tempC * 9/5) + 32).toFixed(1));
+  const tempCVal = singlePrediction?.predicted_temperature_c;
+  const tempCNum = typeof tempCVal === 'number' ? tempCVal : 31.4;
+  const tempCDisplay = typeof tempCVal === 'number' ? tempCVal.toFixed(3) : '31.400';
+  const tempFDisplay = ((tempCNum * 9/5) + 32).toFixed(3);
 
   // Determine heat classification
   const getHeatClassification = (temp) => {
@@ -76,13 +78,13 @@ export const SinglePredictionView = ({ onNavigateToSimulator }) => {
     };
   };
 
-  const heatInfo = getHeatClassification(tempC);
+  const heatInfo = getHeatClassification(tempCNum);
   const HeatIcon = heatInfo.icon;
 
   // Circular gauge math (from 10°C to 45°C, spanning 240 degrees)
   const minTemp = 10;
   const maxTemp = 45;
-  const clampedTemp = Math.max(minTemp, Math.min(maxTemp, tempC));
+  const clampedTemp = Math.max(minTemp, Math.min(maxTemp, tempCNum));
   const tempRatio = (clampedTemp - minTemp) / (maxTemp - minTemp);
   const totalAngle = 240;
   const startAngle = 150; // starts bottom-left
@@ -154,13 +156,13 @@ export const SinglePredictionView = ({ onNavigateToSimulator }) => {
                 <div className="skeleton-box" style={{ width: '100px', height: '52px', margin: '4px auto' }} />
               ) : (
                 <>
-                  <span className="gauge-temp-value tabular-nums">{tempC}</span>
+                  <span className="gauge-temp-value tabular-nums">{tempCDisplay}</span>
                   <span className="gauge-temp-unit">°C</span>
                 </>
               )}
             </div>
             <span className="gauge-temp-secondary tabular-nums">
-              {loading.prediction ? 'Calculating...' : `${tempF}°F`}
+              {loading.prediction ? 'Calculating...' : `${tempFDisplay}°F`}
             </span>
           </div>
         </div>
@@ -228,37 +230,47 @@ export const SinglePredictionView = ({ onNavigateToSimulator }) => {
           </div>
 
           <div className="meta-stats-grid">
-            <div className="stat-box">
-              <div className="stat-box-title">Urban Density</div>
-              <div className="stat-box-value tabular-nums">
-                {activeTileMeta ? `${Math.round(activeTileMeta.urbanDensity * 100)}%` : '75%'}
-              </div>
-              <div className="stat-box-sub">Impervious surface index</div>
-            </div>
+            {activeTileMeta?.urbanDensity != null ? (
+              <>
+                <div className="stat-box">
+                  <div className="stat-box-title">Urban Density</div>
+                  <div className="stat-box-value tabular-nums">
+                    {`${Math.round(activeTileMeta.urbanDensity * 100)}%`}
+                  </div>
+                  <div className="stat-box-sub">Impervious surface index</div>
+                </div>
 
-            <div className="stat-box">
-              <div className="stat-box-title">Existing Tree Canopy</div>
-              <div className="stat-box-value tabular-nums" style={{ color: '#34d399' }}>
-                {activeTileMeta?.baseCanopy ? `${activeTileMeta.baseCanopy}%` : '12.0%'}
-              </div>
-              <div className="stat-box-sub">Vegetative shade cover</div>
-            </div>
+                <div className="stat-box">
+                  <div className="stat-box-title">Existing Tree Canopy</div>
+                  <div className="stat-box-value tabular-nums" style={{ color: '#34d399' }}>
+                    {activeTileMeta.baseCanopy != null ? `${activeTileMeta.baseCanopy}%` : '—'}
+                  </div>
+                  <div className="stat-box-sub">Vegetative shade cover</div>
+                </div>
 
-            <div className="stat-box">
-              <div className="stat-box-title">Roof Coverage</div>
-              <div className="stat-box-value tabular-nums">
-                {activeTileMeta?.baseRoof ? `${activeTileMeta.baseRoof}%` : '42.0%'}
-              </div>
-              <div className="stat-box-sub">Standard albedo surface</div>
-            </div>
+                <div className="stat-box">
+                  <div className="stat-box-title">Roof Coverage</div>
+                  <div className="stat-box-value tabular-nums">
+                    {activeTileMeta.baseRoof != null ? `${activeTileMeta.baseRoof}%` : '—'}
+                  </div>
+                  <div className="stat-box-sub">Standard albedo surface</div>
+                </div>
 
-            <div className="stat-box">
-              <div className="stat-box-title">Elevation</div>
-              <div className="stat-box-value tabular-nums">
-                {activeTileMeta?.elevationM ? `${activeTileMeta.elevationM} m` : '50 m'}
+                <div className="stat-box">
+                  <div className="stat-box-title">Elevation</div>
+                  <div className="stat-box-value tabular-nums">
+                    {activeTileMeta.elevationM != null ? `${activeTileMeta.elevationM} m` : '—'}
+                  </div>
+                  <div className="stat-box-sub">Lapse rate adjusted</div>
+                </div>
+              </>
+            ) : (
+              <div className="stat-box" style={{ gridColumn: '1 / -1' }}>
+                <div className="stat-box-title">Phoenix Grid Tile</div>
+                <div className="stat-box-value">Tile #{selectedTileId}</div>
+                <div className="stat-box-sub">Real observed environmental tile</div>
               </div>
-              <div className="stat-box-sub">Lapse rate adjusted</div>
-            </div>
+            )}
           </div>
         </div>
 

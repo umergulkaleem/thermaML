@@ -1,0 +1,4624 @@
+{
+  "method": "cached_environment_spatial_diagnostic",
+  "heatmap_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-07-15_60m_tcm.json",
+  "selected_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_spatial_test_tiles.json",
+  "environment_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_20_points.json",
+  "selected_tiles": [
+    {
+      "tile_id": 426,
+      "latitude": 33.45250270988613,
+      "longitude": -112.07513939144442,
+      "heatmap_temperature": 39.427,
+      "environment_record_available": true,
+      "distance_km": 0.0,
+      "environment_temperature": 39.427,
+      "temperature_comparison": {
+        "difference": 0.0,
+        "absolute_difference": 0.0
+      }
+    },
+    {
+      "tile_id": 7,
+      "latitude": 33.444987716911896,
+      "longitude": -112.06527459236409,
+      "heatmap_temperature": 39.3804,
+      "environment_record_available": false
+    },
+    {
+      "tile_id": 844,
+      "latitude": 33.45964359568363,
+      "longitude": -112.0654538189535,
+      "heatmap_temperature": 39.3848,
+      "environment_record_available": false
+    },
+    {
+      "tile_id": 8,
+      "latitude": 33.445361091043985,
+      "longitude": -112.08482337108805,
+      "heatmap_temperature": 39.4325,
+      "environment_record_available": false
+    },
+    {
+      "tile_id": 814,
+      "latitude": 33.45947406860447,
+      "longitude": -112.08499912657605,
+      "heatmap_temperature": 39.4538,
+      "environment_record_available": false
+    }
+  ],
+  "cached_environment_record_count": 9,
+  "pairwise_comparisons": [
+    {
+      "tile_a": 414,
+      "tile_b": 420,
+      "distance_km": 0.36265181915430406,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 426,
+      "distance_km": 0.725303962220943,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 6,
+          "mean_absolute_difference": 0.024999999999999467,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 432,
+      "distance_km": 1.0879564280296867,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 12,
+          "mean_absolute_difference": 0.049999999999998934,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 407,
+      "distance_km": 1.4518586782047622,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 17,
+          "mean_absolute_difference": 0.07083333333333226,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 575,
+      "distance_km": 0.4718292927945101,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 3,
+          "mean_absolute_difference": 0.012499999999999881,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 581,
+      "distance_km": 0.785616723963006,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 4,
+          "mean_absolute_difference": 0.016666666666666313,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 587,
+      "distance_km": 1.1290695872120746,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 10,
+          "mean_absolute_difference": 0.041666666666665776,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 414,
+      "tile_b": 593,
+      "distance_km": 1.4817007348947986,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 17,
+          "mean_absolute_difference": 0.07083333333333226,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 426,
+      "distance_km": 0.3626521430666417,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 6,
+          "mean_absolute_difference": 0.024999999999999467,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 432,
+      "distance_km": 0.7253046088753909,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 12,
+          "mean_absolute_difference": 0.049999999999998934,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 407,
+      "distance_km": 1.0896247338111769,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 17,
+          "mean_absolute_difference": 0.07083333333333226,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 575,
+      "distance_km": 0.30180345905478145,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 3,
+          "mean_absolute_difference": 0.012499999999999881,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 581,
+      "distance_km": 0.4718296332631563,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 4,
+          "mean_absolute_difference": 0.016666666666666313,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 587,
+      "distance_km": 0.7856173267163183,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 10,
+          "mean_absolute_difference": 0.041666666666665776,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 420,
+      "tile_b": 593,
+      "distance_km": 1.1290704899328605,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 17,
+          "mean_absolute_difference": 0.07083333333333226,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 432,
+      "distance_km": 0.3626524658087521,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 6,
+          "mean_absolute_difference": 0.024999999999999467,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 407,
+      "distance_km": 0.727806777830911,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 11,
+          "mean_absolute_difference": 0.0458333333333328,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 575,
+      "distance_km": 0.47178462404690635,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 9,
+          "mean_absolute_difference": 0.037499999999999346,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 581,
+      "distance_km": 0.30180372922872684,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 2,
+          "mean_absolute_difference": 0.008333333333333156,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 587,
+      "distance_km": 0.47182997220145734,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 4,
+          "mean_absolute_difference": 0.016666666666666313,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 593,
+      "distance_km": 0.7856179269291036,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 11,
+          "mean_absolute_difference": 0.0458333333333328,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 432,
+      "tile_b": 407,
+      "distance_km": 0.3676360470668745,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 5,
+          "mean_absolute_difference": 0.020833333333333332,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 432,
+      "tile_b": 575,
+      "distance_km": 0.7855633618080066,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 15,
+          "mean_absolute_difference": 0.06249999999999881,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 432,
+      "tile_b": 581,
+      "distance_km": 0.47178512628069597,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 8,
+          "mean_absolute_difference": 0.033333333333332625,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 432,
+      "tile_b": 587,
+      "distance_km": 0.30180399842312355,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 2,
+          "mean_absolute_difference": 0.008333333333333156,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 432,
+      "tile_b": 593,
+      "distance_km": 0.4718303096100989,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 5,
+          "mean_absolute_difference": 0.020833333333333332,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 407,
+      "tile_b": 575,
+      "distance_km": 1.1466203479238781,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 19,
+          "mean_absolute_difference": 0.08333333333333215,
+          "maximum_absolute_difference": 0.19999999999999574
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 407,
+      "tile_b": 581,
+      "distance_km": 0.8106665856446018,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 13,
+          "mean_absolute_difference": 0.054166666666665954,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 407,
+      "tile_b": 587,
+      "distance_km": 0.5124989757208349,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 7,
+          "mean_absolute_difference": 0.02916666666666649,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 407,
+      "tile_b": 593,
+      "distance_km": 0.3621651358432815,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 575,
+      "tile_b": 581,
+      "distance_km": 0.3626520901213703,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 7,
+          "mean_absolute_difference": 0.029166666666666192,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 575,
+      "tile_b": 587,
+      "distance_km": 0.7253045029787738,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 13,
+          "mean_absolute_difference": 0.05416666666666566,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 575,
+      "tile_b": 593,
+      "distance_km": 1.0879572374048907,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 19,
+          "mean_absolute_difference": 0.08333333333333215,
+          "maximum_absolute_difference": 0.19999999999999574
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 581,
+      "tile_b": 587,
+      "distance_km": 0.36265241285740635,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 6,
+          "mean_absolute_difference": 0.024999999999999467,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 581,
+      "tile_b": 593,
+      "distance_km": 0.7253051472835286,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 13,
+          "mean_absolute_difference": 0.054166666666665954,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    {
+      "tile_a": 587,
+      "tile_b": 593,
+      "distance_km": 0.3626527344261251,
+      "variables": {
+        "air_quality:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_no2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_o3:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm10:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_pm2p5:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "air_quality_so2:idx": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "apparent_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "aqi_us_co": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "cloud_cover_octas": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "co2_ppm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "heat_index_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": false,
+          "differing_hour_count": 7,
+          "mean_absolute_difference": 0.02916666666666649,
+          "maximum_absolute_difference": 0.10000000000000142
+        },
+        "methane_ppb": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": null,
+          "maximum_absolute_difference": null
+        },
+        "precipitation_mm": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "relative_humidity_percent": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        },
+        "wet_bulb_temperature_celsius": {
+          "comparable": true,
+          "hour_count": 24,
+          "exact_equal": true,
+          "differing_hour_count": 0,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    }
+  ]
+}

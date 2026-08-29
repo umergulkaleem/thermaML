@@ -1,0 +1,48 @@
+{
+  "polygon_aoi": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "region": "Phoenix, AZ"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -112.085,
+                33.445
+              ],
+              [
+                -112.065,
+                33.445
+              ],
+              [
+                -112.065,
+                33.46
+              ],
+              [
+                -112.085,
+                33.46
+              ],
+              [
+                -112.085,
+                33.445
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "granularity": 60,
+  "date_time": {
+    "start_date": "2023-07-15",
+    "filter_type": 2,
+    "start_time": "00:00",
+    "end_time": "23:00"
+  },
+  "analytic_type": "tcm"
+}

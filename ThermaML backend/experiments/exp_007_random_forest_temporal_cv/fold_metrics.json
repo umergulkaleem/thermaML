@@ -1,0 +1,134 @@
+[
+  {
+    "fold_id": 1,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-09-28",
+    "test_start_date": "2023-10-01",
+    "test_end_date": "2023-10-15",
+    "train_sample_count": 107,
+    "test_sample_count": 10,
+    "test_date_count": 2,
+    "test_target_mean": 24.169166666666666,
+    "test_target_std": 1.3732160144064092,
+    "random_forest": {
+      "mae": 2.97890825892857,
+      "rmse": 4.434885418445315,
+      "r2": -10.588963070287756
+    },
+    "naive_baseline": {
+      "mae": 3.5077570093457924,
+      "rmse": 3.7418590615647913,
+      "r2": -7.250012807715599
+    }
+  },
+  {
+    "fold_id": 2,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-10-15",
+    "test_start_date": "2023-10-28",
+    "test_end_date": "2023-11-01",
+    "train_sample_count": 117,
+    "test_sample_count": 7,
+    "test_date_count": 2,
+    "test_target_mean": 18.29702380952381,
+    "test_target_std": 2.2580164731146533,
+    "random_forest": {
+      "mae": 5.192005013463714,
+      "rmse": 5.221732554262154,
+      "r2": -5.239098277201427
+    },
+    "naive_baseline": {
+      "mae": 2.6641941391941324,
+      "rmse": 3.386471894303597,
+      "r2": -1.6241431878760912
+    }
+  },
+  {
+    "fold_id": 3,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-11-01",
+    "test_start_date": "2023-11-15",
+    "test_end_date": "2023-11-28",
+    "train_sample_count": 124,
+    "test_sample_count": 10,
+    "test_date_count": 2,
+    "test_target_mean": 18.00208333333333,
+    "test_target_std": 3.355559723369376,
+    "random_forest": {
+      "mae": 1.6438258134920773,
+      "rmse": 1.6645567859206232,
+      "r2": 0.7265834645842753
+    },
+    "naive_baseline": {
+      "mae": 2.8087365591397866,
+      "rmse": 4.245327314829481,
+      "r2": -0.7784837633503798
+    }
+  },
+  {
+    "fold_id": 4,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-11-28",
+    "test_start_date": "2023-12-01",
+    "test_end_date": "2023-12-15",
+    "train_sample_count": 134,
+    "test_sample_count": 9,
+    "test_date_count": 2,
+    "test_target_mean": 10.385185185185186,
+    "test_target_std": 0.16428125113751899,
+    "random_forest": {
+      "mae": 4.581602097111999,
+      "rmse": 4.737137641735429,
+      "r2": -934.4240390994555
+    },
+    "naive_baseline": {
+      "mae": 10.21602750138198,
+      "rmse": 10.217201551070294,
+      "r2": -4350.514553152964
+    }
+  },
+  {
+    "fold_id": 5,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2023-12-15",
+    "test_start_date": "2023-12-28",
+    "test_end_date": "2024-01-01",
+    "train_sample_count": 143,
+    "test_sample_count": 8,
+    "test_date_count": 2,
+    "test_target_mean": 7.894270833333334,
+    "test_target_std": 0.051799823611576645,
+    "random_forest": {
+      "mae": 2.1484381675760496,
+      "rmse": 2.2348332856645765,
+      "r2": -2126.2848514110974
+    },
+    "naive_baseline": {
+      "mae": 12.063975087412587,
+      "rmse": 12.064072394043478,
+      "r2": -61989.230968823234
+    }
+  },
+  {
+    "fold_id": 6,
+    "train_start_date": "2023-01-01",
+    "train_end_date": "2024-01-01",
+    "test_start_date": "2024-01-15",
+    "test_end_date": "2024-01-28",
+    "train_sample_count": 151,
+    "test_sample_count": 9,
+    "test_date_count": 2,
+    "test_target_mean": 9.14074074074074,
+    "test_target_std": 2.130880117970153,
+    "random_forest": {
+      "mae": 0.9772231371252218,
+      "rmse": 1.0754428036099546,
+      "r2": 0.7134442525397882
+    },
+    "naive_baseline": {
+      "mae": 10.17835418199657,
+      "rmse": 10.374730225701654,
+      "r2": -25.667856717737205
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "POINT_1": {
+    "tile_id": 426,
+    "latitude": 33.45250270988613,
+    "longitude": -112.07513939144442,
+    "average_temperature": 39.427,
+    "min_temperature": 35.276,
+    "max_temperature": 42.5422
+  },
+  "POINT_2": {
+    "tile_id": 7,
+    "latitude": 33.444987716911896,
+    "longitude": -112.06527459236409,
+    "average_temperature": 39.3804,
+    "min_temperature": 35.3298,
+    "max_temperature": 42.4978
+  },
+  "POINT_3": {
+    "tile_id": 844,
+    "latitude": 33.45964359568363,
+    "longitude": -112.0654538189535,
+    "average_temperature": 39.3848,
+    "min_temperature": 35.3174,
+    "max_temperature": 42.5116
+  },
+  "POINT_4": {
+    "tile_id": 8,
+    "latitude": 33.445361091043985,
+    "longitude": -112.08482337108805,
+    "average_temperature": 39.4325,
+    "min_temperature": 35.3451,
+    "max_temperature": 42.554
+  },
+  "POINT_5": {
+    "tile_id": 814,
+    "latitude": 33.45947406860447,
+    "longitude": -112.08499912657605,
+    "average_temperature": 39.4538,
+    "min_temperature": 35.0885,
+    "max_temperature": 42.5534
+  }
+}

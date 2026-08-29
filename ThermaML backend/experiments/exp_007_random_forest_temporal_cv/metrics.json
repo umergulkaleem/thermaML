@@ -1,0 +1,34 @@
+{
+  "target": "temperature",
+  "task": "daily tile/date regression",
+  "fold_count": 6,
+  "number_of_tiles": 6,
+  "number_of_dates": 37,
+  "number_of_features": 41,
+  "primary_metrics": [
+    "mae",
+    "rmse"
+  ],
+  "random_forest": {
+    "mean_mae": 2.920333747949605,
+    "std_mae": 1.523412177725779,
+    "mean_rmse": 3.2280980816063423,
+    "std_rmse": 1.6213818985158217,
+    "mean_r2": -512.5161540234864,
+    "std_r2": 797.7404879400518,
+    "pooled_mae": 2.826194495607469,
+    "pooled_rmse": 3.5490745714414795,
+    "pooled_r2": 0.68153238252696
+  },
+  "naive_baseline": {
+    "mean_mae": 6.906507413078475,
+    "std_mae": 3.9706806615911434,
+    "mean_rmse": 7.338277073585549,
+    "std_rmse": 3.6045970696065073,
+    "mean_r2": -11062.51100307548,
+    "std_r2": 22830.23415513496,
+    "pooled_mae": 6.827840198281554,
+    "pooled_rmse": 8.095061772876265,
+    "pooled_r2": -0.6568201354729579
+  }
+}

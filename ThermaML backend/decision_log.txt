@@ -1,0 +1,78 @@
+================================================================================
+THERMAML DECISION LOG
+================================================================================
+
+[2026-08-29] Frontend–Backend Integration (Antigravity)
+------------------------------------------------------------------------
+Completed full React frontend / FastAPI backend integration. Key decisions:
+
+1. LIVE MODE: No silent mock fallback in live API path.
+   All api.js functions now throw on backend error so the UI surfaces the
+   real error message instead of silently returning fake temperatures.
+
+2. REMOVED PRE-FLIGHT CLIENT VALIDATION: predict_for_date_tile and
+   compare_models previously validated date/tile against a hardcoded mock
+   map before calling the backend. This was blocking real tile IDs (7, 8,
+   420, 426, 814, 844). Removed — backend is the sole validator.
+
+3. VITE_API_URL ENV VAR: BASE_URL now reads from import.meta.env.VITE_API_URL
+   (frontend/.env: VITE_API_URL=http://localhost:8000/api). No code changes
+   needed to switch backend host.
+
+4. DYNAMIC MODEL SELECTOR: CascadingControls model <select> now maps over
+   availableModels from the backend instead of two hardcoded <option> tags.
+
+5. SCENARIO EXPLICIT TRIGGER: ScenarioSimulatorView now has an explicit
+   "Run Simulation" button. Previously the context auto-fired the scenario
+   API call on every selection change (date / tile / model), causing ~50+
+   backend calls while moving sliders. Prediction and comparison still
+   auto-refresh on selection change.
+
+6. INTERVENTION COST CONSTANTS CORRECTED: Frontend display labels updated
+   to match backend scenario/interventions.py:
+   - Trees: $1,088/tree  (was $350)
+   - Cool roof: $1.15/sqft  (was $1.85)
+   - Cool pavement: $3.00/sqft  (was $0.75)
+
+7. TILE METADATA CONDITIONAL RENDER: SinglePredictionView "Tile
+   Environmental Baseline" section now conditionally renders; when the
+   backend returns bare integer tile IDs (no urbanDensity/elevation fields),
+   it shows a neutral "Phoenix Grid Tile" row instead of hardcoded
+   placeholder percentages.
+
+8. MOCK PATH PRESERVED: All mock constants and the mock engine remain intact
+   behind USE_MOCK_API = true. No mock data was removed — it coexists safely.
+
+9. MOCK TILE IDS CORRECTED: DATE_TILES_MAP in mock mode now uses the six
+   real Phoenix tiles [7, 426, 8, 844, 420, 814] instead of fake IDs
+   (101, 108, 204, etc.).
+
+10. NO NEW ML ARTIFACTS OR API CALLS: No model retraining, no FortyGuard API
+    credits used, no new Python dependencies installed.
+
+Backend tests: 31/31 passed (pytest tests/).
+Verified: RF tile 8, 2024-01-28 → 39.4283°C ✓
+================================================================================
+
+[2026-08-29] Frontend Prediction Integration Verified (Antigravity)
+------------------------------------------------------------------------
+1. Corrected date-specific dataset & retrained models faithfully reflected in frontend.
+2. All displayed model predictions and deltas formatted to exactly 3 decimal places (e.g. 25.734 °C).
+3. Underlying backend/model values remain unrounded floating-point precision.
+4. Mislabeled "Observed Baseline" in scenario simulation corrected to "Predicted Baseline" to distinguish model predictions from observed target values.
+5. All 44 backend tests pass (44/44); frontend production build succeeds cleanly.
+================================================================================
+
+[2026-08-29] Scenario Simulator CapEx Calculation & Input Handling Fix (Antigravity)
+------------------------------------------------------------------------
+1. Fixed manual quantity parsing: empty strings, nulls, and numeric strings in quantity inputs are now safely sanitized and converted.
+2. Backend validation in scenario/interventions.py and api/server.py now safely handles empty/omitted quantities without 400 errors.
+3. Total estimated investment now returns null / displays "N/A (quantities omitted)" when all physical quantities are omitted, rather than erroneously calculating $0.
+4. CapEx breakdown card dynamically updates live costs whenever manual input quantities (trees, roof area, paved area) or sliders change.
+5. User-defined percentage slider changes automatically scale physical quantities and budget proportionally if manual overrides are not typed.
+6. Custom user-defined numbers (e.g. custom tree count, custom roof sqft, custom paved sqft) directly drive the CapEx calculation for both live previews and "Run Simulation".
+7. Presets now trigger simulation updates with clean values for active and omitted quantities.
+================================================================================
+
+
+

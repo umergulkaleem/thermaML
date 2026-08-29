@@ -28,6 +28,10 @@ export const ModelComparisonView = () => {
   const linearTemp = predictions.linear_regression ?? 38.6;
   const rfTemp = predictions.random_forest ?? 39.4;
 
+  const naiveTempDisplay = typeof naiveTemp === 'number' ? naiveTemp.toFixed(3) : naiveTemp;
+  const linearTempDisplay = typeof linearTemp === 'number' ? linearTemp.toFixed(3) : linearTemp;
+  const rfTempDisplay = typeof rfTemp === 'number' ? rfTemp.toFixed(3) : rfTemp;
+
   // Max temp for chart scale
   const maxScaleTemp = 45;
   const minScaleTemp = 15;
@@ -38,9 +42,9 @@ export const ModelComparisonView = () => {
   };
 
   // Deltas vs Naive Baseline
-  const linearDelta = Number((linearTemp - naiveTemp).toFixed(1));
-  const rfDelta = Number((rfTemp - naiveTemp).toFixed(1));
-  const modelSpread = Number(Math.abs(rfTemp - linearTemp).toFixed(1));
+  const linearDelta = Number((linearTemp - naiveTemp).toFixed(3));
+  const rfDelta = Number((rfTemp - naiveTemp).toFixed(3));
+  const modelSpread = Number(Math.abs(rfTemp - linearTemp).toFixed(3));
 
   return (
     <div className="comparison-grid tab-content-wrapper">
@@ -71,7 +75,7 @@ export const ModelComparisonView = () => {
                 Naive Training Mean (Baseline)
               </span>
               <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)', color: '#94a3b8' }}>
-                {naiveTemp}°C
+                {naiveTempDisplay}°C
               </span>
             </div>
             <div className="bar-track">
@@ -80,7 +84,7 @@ export const ModelComparisonView = () => {
                 style={{ width: `${getWidthPercent(naiveTemp)}%` }} 
               />
               <div className="bar-label-inner tabular-nums">
-                <span>{naiveTemp}°C</span>
+                <span>{naiveTempDisplay}°C</span>
                 <span style={{ fontSize: '11px', fontWeight: 'normal', color: '#cbd5e1' }}>
                   (Dataset Global Mean)
                 </span>
@@ -98,10 +102,10 @@ export const ModelComparisonView = () => {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <span className={`badge ${linearDelta >= 0 ? 'badge-orange' : 'badge-cyan'}`} style={{ fontSize: '11px' }}>
                   {linearDelta >= 0 ? <ArrowUpRight size={12} /> : <ArrowDownRight size={12} />}
-                  <span>{linearDelta >= 0 ? `+${linearDelta}°C` : `${linearDelta}°C`} vs Naive</span>
+                  <span>{linearDelta >= 0 ? `+${linearDelta.toFixed(3)}°C` : `${linearDelta.toFixed(3)}°C`} vs Naive</span>
                 </span>
                 <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)', color: '#38bdf8', fontWeight: '700' }}>
-                  {linearTemp}°C
+                  {linearTempDisplay}°C
                 </span>
               </div>
             </div>
@@ -111,7 +115,7 @@ export const ModelComparisonView = () => {
                 style={{ width: `${getWidthPercent(linearTemp)}%` }} 
               />
               <div className="bar-label-inner tabular-nums">
-                <span>{linearTemp}°C</span>
+                <span>{linearTempDisplay}°C</span>
                 <span style={{ fontSize: '11px', fontWeight: 'normal', color: '#e0f2fe' }}>
                   (Parametric Model)
                 </span>
@@ -129,10 +133,10 @@ export const ModelComparisonView = () => {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <span className={`badge ${rfDelta >= 0 ? 'badge-rose' : 'badge-emerald'}`} style={{ fontSize: '11px' }}>
                   {rfDelta >= 0 ? <ArrowUpRight size={12} /> : <ArrowDownRight size={12} />}
-                  <span>{rfDelta >= 0 ? `+${rfDelta}°C` : `${rfDelta}°C`} vs Naive</span>
+                  <span>{rfDelta >= 0 ? `+${rfDelta.toFixed(3)}°C` : `${rfDelta.toFixed(3)}°C`} vs Naive</span>
                 </span>
                 <span className="tabular-nums" style={{ fontFamily: 'var(--font-mono)', color: '#fb923c', fontWeight: '700' }}>
-                  {rfTemp}°C
+                  {rfTempDisplay}°C
                 </span>
               </div>
             </div>
@@ -142,7 +146,7 @@ export const ModelComparisonView = () => {
                 style={{ width: `${getWidthPercent(rfTemp)}%` }} 
               />
               <div className="bar-label-inner tabular-nums">
-                <span>{rfTemp}°C</span>
+                <span>{rfTempDisplay}°C</span>
                 <span style={{ fontSize: '11px', fontWeight: 'normal', color: '#ffedd5' }}>
                   (Non-linear Multi-tree Model)
                 </span>
@@ -163,7 +167,7 @@ export const ModelComparisonView = () => {
           <div className="stat-box">
             <div className="stat-box-title">Model Discrepancy</div>
             <div className="stat-box-value tabular-nums" style={{ color: modelSpread > 1.5 ? '#fb923c' : '#34d399' }}>
-              {modelSpread}°C
+              {modelSpread.toFixed(3)}°C
             </div>
             <div className="stat-box-sub">|RF - Linear| delta</div>
           </div>
@@ -171,7 +175,7 @@ export const ModelComparisonView = () => {
           <div className="stat-box">
             <div className="stat-box-title">Max UHI Departure</div>
             <div className="stat-box-value tabular-nums" style={{ color: '#f87171' }}>
-              +{Math.max(linearDelta, rfDelta)}°C
+              +{Math.max(linearDelta, rfDelta).toFixed(3)}°C
             </div>
             <div className="stat-box-sub">Above historical mean</div>
           </div>
@@ -229,7 +233,7 @@ export const ModelComparisonView = () => {
               <span className="badge badge-cyan" style={{ fontSize: '10px' }}>Reference</span>
             </div>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>
-              Static training dataset mean ({naiveTemp}°C). Serves as the statistical baseline to evaluate predictive skill gain.
+              Static training dataset mean ({naiveTempDisplay}°C). Serves as the statistical baseline to evaluate predictive skill gain.
             </p>
           </div>
 

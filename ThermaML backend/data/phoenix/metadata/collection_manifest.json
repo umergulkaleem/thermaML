@@ -1,0 +1,2203 @@
+{
+  "city": "phoenix",
+  "records": [
+    {
+      "date": "2023-07-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "reused_valid",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-07-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_20_points.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-07-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 35.0687,
+            "max": 42.5565
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-07-15T00:00:00-07:00",
+              "2023-07-15T01:00:00-07:00",
+              "2023-07-15T02:00:00-07:00",
+              "2023-07-15T03:00:00-07:00",
+              "2023-07-15T04:00:00-07:00",
+              "2023-07-15T05:00:00-07:00",
+              "2023-07-15T06:00:00-07:00",
+              "2023-07-15T07:00:00-07:00",
+              "2023-07-15T08:00:00-07:00",
+              "2023-07-15T09:00:00-07:00",
+              "2023-07-15T10:00:00-07:00",
+              "2023-07-15T11:00:00-07:00",
+              "2023-07-15T12:00:00-07:00",
+              "2023-07-15T13:00:00-07:00",
+              "2023-07-15T14:00:00-07:00",
+              "2023-07-15T15:00:00-07:00",
+              "2023-07-15T16:00:00-07:00",
+              "2023-07-15T17:00:00-07:00",
+              "2023-07-15T18:00:00-07:00",
+              "2023-07-15T19:00:00-07:00",
+              "2023-07-15T20:00:00-07:00",
+              "2023-07-15T21:00:00-07:00",
+              "2023-07-15T22:00:00-07:00",
+              "2023-07-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-07-15T00:00:00-07:00",
+              "2023-07-15T01:00:00-07:00",
+              "2023-07-15T02:00:00-07:00",
+              "2023-07-15T03:00:00-07:00",
+              "2023-07-15T04:00:00-07:00",
+              "2023-07-15T05:00:00-07:00",
+              "2023-07-15T06:00:00-07:00",
+              "2023-07-15T07:00:00-07:00",
+              "2023-07-15T08:00:00-07:00",
+              "2023-07-15T09:00:00-07:00",
+              "2023-07-15T10:00:00-07:00",
+              "2023-07-15T11:00:00-07:00",
+              "2023-07-15T12:00:00-07:00",
+              "2023-07-15T13:00:00-07:00",
+              "2023-07-15T14:00:00-07:00",
+              "2023-07-15T15:00:00-07:00",
+              "2023-07-15T16:00:00-07:00",
+              "2023-07-15T17:00:00-07:00",
+              "2023-07-15T18:00:00-07:00",
+              "2023-07-15T19:00:00-07:00",
+              "2023-07-15T20:00:00-07:00",
+              "2023-07-15T21:00:00-07:00",
+              "2023-07-15T22:00:00-07:00",
+              "2023-07-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2024-02-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF23D90>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-03-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF239D0>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-04-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF23610>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-05-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF23250>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-06-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22E90>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-07-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22490>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-08-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22850>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-09-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22990>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-10-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF21D10>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-11-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF21E50>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2024-12-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF21F90>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-01-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACD9BB10>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-02-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF211D0>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-03-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22210>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-04-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF21A90>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-05-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF21950>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2025-06-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "HTTPSConnectionPool(host='api.fortyguard.com', port=443): Max retries exceeded with url: /v1/system/fetch-api-key-usage (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000020CACF22C10>: Failed to resolve 'api.fortyguard.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "date": "2023-01-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "'latitude'"
+    },
+    {
+      "date": "2023-02-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-03-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-04-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-05-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-06-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-08-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-09-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-10-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-11-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2023-12-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    },
+    {
+      "date": "2024-01-15",
+      "heatmap_status": "failed",
+      "environment_status": "failed",
+      "error": "Measured heatmap cost exceeded the known 4,220-credit reference."
+    }
+  ],
+  "scheduled_dates": [
+    "2023-01-15",
+    "2023-02-15",
+    "2023-03-15",
+    "2023-04-15",
+    "2023-05-15",
+    "2023-06-15",
+    "2023-07-15",
+    "2023-08-15",
+    "2023-09-15",
+    "2023-10-15",
+    "2023-11-15",
+    "2023-12-15",
+    "2024-01-15",
+    "2024-02-15",
+    "2024-03-15",
+    "2024-04-15",
+    "2024-05-15",
+    "2024-06-15",
+    "2024-07-15",
+    "2024-08-15",
+    "2024-09-15",
+    "2024-10-15",
+    "2024-11-15",
+    "2024-12-15",
+    "2025-01-15",
+    "2025-02-15",
+    "2025-03-15",
+    "2025-04-15",
+    "2025-05-15",
+    "2025-06-15"
+  ],
+  "environment_only_dates": [
+    "2023-01-15",
+    "2023-02-15",
+    "2023-03-15",
+    "2023-04-15",
+    "2023-05-15",
+    "2023-06-15",
+    "2023-07-15",
+    "2023-08-15",
+    "2023-09-15",
+    "2023-10-15",
+    "2023-11-15",
+    "2023-12-15",
+    "2024-01-15"
+  ],
+  "environment_only_records": [
+    {
+      "date": "2023-01-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-01-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-01-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-01-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-01-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 10.6111,
+            "max": 15.9306
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-01-15T00:00:00-07:00",
+              "2023-01-15T01:00:00-07:00",
+              "2023-01-15T02:00:00-07:00",
+              "2023-01-15T03:00:00-07:00",
+              "2023-01-15T04:00:00-07:00",
+              "2023-01-15T05:00:00-07:00",
+              "2023-01-15T06:00:00-07:00",
+              "2023-01-15T07:00:00-07:00",
+              "2023-01-15T08:00:00-07:00",
+              "2023-01-15T09:00:00-07:00",
+              "2023-01-15T10:00:00-07:00",
+              "2023-01-15T11:00:00-07:00",
+              "2023-01-15T12:00:00-07:00",
+              "2023-01-15T13:00:00-07:00",
+              "2023-01-15T14:00:00-07:00",
+              "2023-01-15T15:00:00-07:00",
+              "2023-01-15T16:00:00-07:00",
+              "2023-01-15T17:00:00-07:00",
+              "2023-01-15T18:00:00-07:00",
+              "2023-01-15T19:00:00-07:00",
+              "2023-01-15T20:00:00-07:00",
+              "2023-01-15T21:00:00-07:00",
+              "2023-01-15T22:00:00-07:00",
+              "2023-01-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-01-15T00:00:00-07:00",
+              "2023-01-15T01:00:00-07:00",
+              "2023-01-15T02:00:00-07:00",
+              "2023-01-15T03:00:00-07:00",
+              "2023-01-15T04:00:00-07:00",
+              "2023-01-15T05:00:00-07:00",
+              "2023-01-15T06:00:00-07:00",
+              "2023-01-15T07:00:00-07:00",
+              "2023-01-15T08:00:00-07:00",
+              "2023-01-15T09:00:00-07:00",
+              "2023-01-15T10:00:00-07:00",
+              "2023-01-15T11:00:00-07:00",
+              "2023-01-15T12:00:00-07:00",
+              "2023-01-15T13:00:00-07:00",
+              "2023-01-15T14:00:00-07:00",
+              "2023-01-15T15:00:00-07:00",
+              "2023-01-15T16:00:00-07:00",
+              "2023-01-15T17:00:00-07:00",
+              "2023-01-15T18:00:00-07:00",
+              "2023-01-15T19:00:00-07:00",
+              "2023-01-15T20:00:00-07:00",
+              "2023-01-15T21:00:00-07:00",
+              "2023-01-15T22:00:00-07:00",
+              "2023-01-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2023-02-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-02-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-02-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-02-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-02-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 3.0024,
+            "max": 11.9035
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-02-15T00:00:00-07:00",
+              "2023-02-15T01:00:00-07:00",
+              "2023-02-15T02:00:00-07:00",
+              "2023-02-15T03:00:00-07:00",
+              "2023-02-15T04:00:00-07:00",
+              "2023-02-15T05:00:00-07:00",
+              "2023-02-15T06:00:00-07:00",
+              "2023-02-15T07:00:00-07:00",
+              "2023-02-15T08:00:00-07:00",
+              "2023-02-15T09:00:00-07:00",
+              "2023-02-15T10:00:00-07:00",
+              "2023-02-15T11:00:00-07:00",
+              "2023-02-15T12:00:00-07:00",
+              "2023-02-15T13:00:00-07:00",
+              "2023-02-15T14:00:00-07:00",
+              "2023-02-15T15:00:00-07:00",
+              "2023-02-15T16:00:00-07:00",
+              "2023-02-15T17:00:00-07:00",
+              "2023-02-15T18:00:00-07:00",
+              "2023-02-15T19:00:00-07:00",
+              "2023-02-15T20:00:00-07:00",
+              "2023-02-15T21:00:00-07:00",
+              "2023-02-15T22:00:00-07:00",
+              "2023-02-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-02-15T00:00:00-07:00",
+              "2023-02-15T01:00:00-07:00",
+              "2023-02-15T02:00:00-07:00",
+              "2023-02-15T03:00:00-07:00",
+              "2023-02-15T04:00:00-07:00",
+              "2023-02-15T05:00:00-07:00",
+              "2023-02-15T06:00:00-07:00",
+              "2023-02-15T07:00:00-07:00",
+              "2023-02-15T08:00:00-07:00",
+              "2023-02-15T09:00:00-07:00",
+              "2023-02-15T10:00:00-07:00",
+              "2023-02-15T11:00:00-07:00",
+              "2023-02-15T12:00:00-07:00",
+              "2023-02-15T13:00:00-07:00",
+              "2023-02-15T14:00:00-07:00",
+              "2023-02-15T15:00:00-07:00",
+              "2023-02-15T16:00:00-07:00",
+              "2023-02-15T17:00:00-07:00",
+              "2023-02-15T18:00:00-07:00",
+              "2023-02-15T19:00:00-07:00",
+              "2023-02-15T20:00:00-07:00",
+              "2023-02-15T21:00:00-07:00",
+              "2023-02-15T22:00:00-07:00",
+              "2023-02-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2023-03-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-03-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-03-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-03-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-03-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 12.9484,
+            "max": 18.4934
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-03-15T00:00:00-07:00",
+              "2023-03-15T01:00:00-07:00",
+              "2023-03-15T02:00:00-07:00",
+              "2023-03-15T03:00:00-07:00",
+              "2023-03-15T04:00:00-07:00",
+              "2023-03-15T05:00:00-07:00",
+              "2023-03-15T06:00:00-07:00",
+              "2023-03-15T07:00:00-07:00",
+              "2023-03-15T08:00:00-07:00",
+              "2023-03-15T09:00:00-07:00",
+              "2023-03-15T10:00:00-07:00",
+              "2023-03-15T11:00:00-07:00",
+              "2023-03-15T12:00:00-07:00",
+              "2023-03-15T13:00:00-07:00",
+              "2023-03-15T14:00:00-07:00",
+              "2023-03-15T15:00:00-07:00",
+              "2023-03-15T16:00:00-07:00",
+              "2023-03-15T17:00:00-07:00",
+              "2023-03-15T18:00:00-07:00",
+              "2023-03-15T19:00:00-07:00",
+              "2023-03-15T20:00:00-07:00",
+              "2023-03-15T21:00:00-07:00",
+              "2023-03-15T22:00:00-07:00",
+              "2023-03-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-03-15T00:00:00-07:00",
+              "2023-03-15T01:00:00-07:00",
+              "2023-03-15T02:00:00-07:00",
+              "2023-03-15T03:00:00-07:00",
+              "2023-03-15T04:00:00-07:00",
+              "2023-03-15T05:00:00-07:00",
+              "2023-03-15T06:00:00-07:00",
+              "2023-03-15T07:00:00-07:00",
+              "2023-03-15T08:00:00-07:00",
+              "2023-03-15T09:00:00-07:00",
+              "2023-03-15T10:00:00-07:00",
+              "2023-03-15T11:00:00-07:00",
+              "2023-03-15T12:00:00-07:00",
+              "2023-03-15T13:00:00-07:00",
+              "2023-03-15T14:00:00-07:00",
+              "2023-03-15T15:00:00-07:00",
+              "2023-03-15T16:00:00-07:00",
+              "2023-03-15T17:00:00-07:00",
+              "2023-03-15T18:00:00-07:00",
+              "2023-03-15T19:00:00-07:00",
+              "2023-03-15T20:00:00-07:00",
+              "2023-03-15T21:00:00-07:00",
+              "2023-03-15T22:00:00-07:00",
+              "2023-03-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2023-04-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-04-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-04-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-04-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-04-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 11.6896,
+            "max": 31.0229
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-04-15T00:00:00-07:00",
+              "2023-04-15T01:00:00-07:00",
+              "2023-04-15T02:00:00-07:00",
+              "2023-04-15T03:00:00-07:00",
+              "2023-04-15T04:00:00-07:00",
+              "2023-04-15T05:00:00-07:00",
+              "2023-04-15T06:00:00-07:00",
+              "2023-04-15T07:00:00-07:00",
+              "2023-04-15T08:00:00-07:00",
+              "2023-04-15T09:00:00-07:00",
+              "2023-04-15T10:00:00-07:00",
+              "2023-04-15T11:00:00-07:00",
+              "2023-04-15T12:00:00-07:00",
+              "2023-04-15T13:00:00-07:00",
+              "2023-04-15T14:00:00-07:00",
+              "2023-04-15T15:00:00-07:00",
+              "2023-04-15T16:00:00-07:00",
+              "2023-04-15T17:00:00-07:00",
+              "2023-04-15T18:00:00-07:00",
+              "2023-04-15T19:00:00-07:00",
+              "2023-04-15T20:00:00-07:00",
+              "2023-04-15T21:00:00-07:00",
+              "2023-04-15T22:00:00-07:00",
+              "2023-04-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-04-15T00:00:00-07:00",
+              "2023-04-15T01:00:00-07:00",
+              "2023-04-15T02:00:00-07:00",
+              "2023-04-15T03:00:00-07:00",
+              "2023-04-15T04:00:00-07:00",
+              "2023-04-15T05:00:00-07:00",
+              "2023-04-15T06:00:00-07:00",
+              "2023-04-15T07:00:00-07:00",
+              "2023-04-15T08:00:00-07:00",
+              "2023-04-15T09:00:00-07:00",
+              "2023-04-15T10:00:00-07:00",
+              "2023-04-15T11:00:00-07:00",
+              "2023-04-15T12:00:00-07:00",
+              "2023-04-15T13:00:00-07:00",
+              "2023-04-15T14:00:00-07:00",
+              "2023-04-15T15:00:00-07:00",
+              "2023-04-15T16:00:00-07:00",
+              "2023-04-15T17:00:00-07:00",
+              "2023-04-15T18:00:00-07:00",
+              "2023-04-15T19:00:00-07:00",
+              "2023-04-15T20:00:00-07:00",
+              "2023-04-15T21:00:00-07:00",
+              "2023-04-15T22:00:00-07:00",
+              "2023-04-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2023-05-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-05-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-05-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-05-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-05-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 24.962,
+            "max": 38.8516
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-05-15T00:00:00-07:00",
+              "2023-05-15T01:00:00-07:00",
+              "2023-05-15T02:00:00-07:00",
+              "2023-05-15T03:00:00-07:00",
+              "2023-05-15T04:00:00-07:00",
+              "2023-05-15T05:00:00-07:00",
+              "2023-05-15T06:00:00-07:00",
+              "2023-05-15T07:00:00-07:00",
+              "2023-05-15T08:00:00-07:00",
+              "2023-05-15T09:00:00-07:00",
+              "2023-05-15T10:00:00-07:00",
+              "2023-05-15T11:00:00-07:00",
+              "2023-05-15T12:00:00-07:00",
+              "2023-05-15T13:00:00-07:00",
+              "2023-05-15T14:00:00-07:00",
+              "2023-05-15T15:00:00-07:00",
+              "2023-05-15T16:00:00-07:00",
+              "2023-05-15T17:00:00-07:00",
+              "2023-05-15T18:00:00-07:00",
+              "2023-05-15T19:00:00-07:00",
+              "2023-05-15T20:00:00-07:00",
+              "2023-05-15T21:00:00-07:00",
+              "2023-05-15T22:00:00-07:00",
+              "2023-05-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-05-15T00:00:00-07:00",
+              "2023-05-15T01:00:00-07:00",
+              "2023-05-15T02:00:00-07:00",
+              "2023-05-15T03:00:00-07:00",
+              "2023-05-15T04:00:00-07:00",
+              "2023-05-15T05:00:00-07:00",
+              "2023-05-15T06:00:00-07:00",
+              "2023-05-15T07:00:00-07:00",
+              "2023-05-15T08:00:00-07:00",
+              "2023-05-15T09:00:00-07:00",
+              "2023-05-15T10:00:00-07:00",
+              "2023-05-15T11:00:00-07:00",
+              "2023-05-15T12:00:00-07:00",
+              "2023-05-15T13:00:00-07:00",
+              "2023-05-15T14:00:00-07:00",
+              "2023-05-15T15:00:00-07:00",
+              "2023-05-15T16:00:00-07:00",
+              "2023-05-15T17:00:00-07:00",
+              "2023-05-15T18:00:00-07:00",
+              "2023-05-15T19:00:00-07:00",
+              "2023-05-15T20:00:00-07:00",
+              "2023-05-15T21:00:00-07:00",
+              "2023-05-15T22:00:00-07:00",
+              "2023-05-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2023-06-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-06-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-06-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-06-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-06-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 23.905,
+            "max": 37.9332
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-06-15T00:00:00-07:00",
+              "2023-06-15T01:00:00-07:00",
+              "2023-06-15T02:00:00-07:00",
+              "2023-06-15T03:00:00-07:00",
+              "2023-06-15T04:00:00-07:00",
+              "2023-06-15T05:00:00-07:00",
+              "2023-06-15T06:00:00-07:00",
+              "2023-06-15T07:00:00-07:00",
+              "2023-06-15T08:00:00-07:00",
+              "2023-06-15T09:00:00-07:00",
+              "2023-06-15T10:00:00-07:00",
+              "2023-06-15T11:00:00-07:00",
+              "2023-06-15T12:00:00-07:00",
+              "2023-06-15T13:00:00-07:00",
+              "2023-06-15T14:00:00-07:00",
+              "2023-06-15T15:00:00-07:00",
+              "2023-06-15T16:00:00-07:00",
+              "2023-06-15T17:00:00-07:00",
+              "2023-06-15T18:00:00-07:00",
+              "2023-06-15T19:00:00-07:00",
+              "2023-06-15T20:00:00-07:00",
+              "2023-06-15T21:00:00-07:00",
+              "2023-06-15T22:00:00-07:00",
+              "2023-06-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-06-15T00:00:00-07:00",
+              "2023-06-15T01:00:00-07:00",
+              "2023-06-15T02:00:00-07:00",
+              "2023-06-15T03:00:00-07:00",
+              "2023-06-15T04:00:00-07:00",
+              "2023-06-15T05:00:00-07:00",
+              "2023-06-15T06:00:00-07:00",
+              "2023-06-15T07:00:00-07:00",
+              "2023-06-15T08:00:00-07:00",
+              "2023-06-15T09:00:00-07:00",
+              "2023-06-15T10:00:00-07:00",
+              "2023-06-15T11:00:00-07:00",
+              "2023-06-15T12:00:00-07:00",
+              "2023-06-15T13:00:00-07:00",
+              "2023-06-15T14:00:00-07:00",
+              "2023-06-15T15:00:00-07:00",
+              "2023-06-15T16:00:00-07:00",
+              "2023-06-15T17:00:00-07:00",
+              "2023-06-15T18:00:00-07:00",
+              "2023-06-15T19:00:00-07:00",
+              "2023-06-15T20:00:00-07:00",
+              "2023-06-15T21:00:00-07:00",
+              "2023-06-15T22:00:00-07:00",
+              "2023-06-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2023-07-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-07-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_20_points.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-07-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 35.0687,
+            "max": 42.5565
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-07-15T00:00:00-07:00",
+              "2023-07-15T01:00:00-07:00",
+              "2023-07-15T02:00:00-07:00",
+              "2023-07-15T03:00:00-07:00",
+              "2023-07-15T04:00:00-07:00",
+              "2023-07-15T05:00:00-07:00",
+              "2023-07-15T06:00:00-07:00",
+              "2023-07-15T07:00:00-07:00",
+              "2023-07-15T08:00:00-07:00",
+              "2023-07-15T09:00:00-07:00",
+              "2023-07-15T10:00:00-07:00",
+              "2023-07-15T11:00:00-07:00",
+              "2023-07-15T12:00:00-07:00",
+              "2023-07-15T13:00:00-07:00",
+              "2023-07-15T14:00:00-07:00",
+              "2023-07-15T15:00:00-07:00",
+              "2023-07-15T16:00:00-07:00",
+              "2023-07-15T17:00:00-07:00",
+              "2023-07-15T18:00:00-07:00",
+              "2023-07-15T19:00:00-07:00",
+              "2023-07-15T20:00:00-07:00",
+              "2023-07-15T21:00:00-07:00",
+              "2023-07-15T22:00:00-07:00",
+              "2023-07-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-07-15T00:00:00-07:00",
+              "2023-07-15T01:00:00-07:00",
+              "2023-07-15T02:00:00-07:00",
+              "2023-07-15T03:00:00-07:00",
+              "2023-07-15T04:00:00-07:00",
+              "2023-07-15T05:00:00-07:00",
+              "2023-07-15T06:00:00-07:00",
+              "2023-07-15T07:00:00-07:00",
+              "2023-07-15T08:00:00-07:00",
+              "2023-07-15T09:00:00-07:00",
+              "2023-07-15T10:00:00-07:00",
+              "2023-07-15T11:00:00-07:00",
+              "2023-07-15T12:00:00-07:00",
+              "2023-07-15T13:00:00-07:00",
+              "2023-07-15T14:00:00-07:00",
+              "2023-07-15T15:00:00-07:00",
+              "2023-07-15T16:00:00-07:00",
+              "2023-07-15T17:00:00-07:00",
+              "2023-07-15T18:00:00-07:00",
+              "2023-07-15T19:00:00-07:00",
+              "2023-07-15T20:00:00-07:00",
+              "2023-07-15T21:00:00-07:00",
+              "2023-07-15T22:00:00-07:00",
+              "2023-07-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0
+    },
+    {
+      "date": "2023-08-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "failed",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-08-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-08-15_environment_tile_426.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-08-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 34.0515,
+            "max": 41.0446
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-08-15T00:00:00-07:00",
+              "2023-08-15T01:00:00-07:00",
+              "2023-08-15T02:00:00-07:00",
+              "2023-08-15T03:00:00-07:00",
+              "2023-08-15T04:00:00-07:00",
+              "2023-08-15T05:00:00-07:00",
+              "2023-08-15T06:00:00-07:00",
+              "2023-08-15T07:00:00-07:00",
+              "2023-08-15T08:00:00-07:00",
+              "2023-08-15T09:00:00-07:00",
+              "2023-08-15T10:00:00-07:00",
+              "2023-08-15T11:00:00-07:00",
+              "2023-08-15T12:00:00-07:00",
+              "2023-08-15T13:00:00-07:00",
+              "2023-08-15T14:00:00-07:00",
+              "2023-08-15T15:00:00-07:00",
+              "2023-08-15T16:00:00-07:00",
+              "2023-08-15T17:00:00-07:00",
+              "2023-08-15T18:00:00-07:00",
+              "2023-08-15T19:00:00-07:00",
+              "2023-08-15T20:00:00-07:00",
+              "2023-08-15T21:00:00-07:00",
+              "2023-08-15T22:00:00-07:00",
+              "2023-08-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 0,
+      "validation_failures": [
+        "tile 7: Environment response must contain exactly one location."
+      ]
+    },
+    {
+      "date": "2023-09-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-09-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-09-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-09-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-09-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 24.165,
+            "max": 38.8195
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-09-15T00:00:00-07:00",
+              "2023-09-15T01:00:00-07:00",
+              "2023-09-15T02:00:00-07:00",
+              "2023-09-15T03:00:00-07:00",
+              "2023-09-15T04:00:00-07:00",
+              "2023-09-15T05:00:00-07:00",
+              "2023-09-15T06:00:00-07:00",
+              "2023-09-15T07:00:00-07:00",
+              "2023-09-15T08:00:00-07:00",
+              "2023-09-15T09:00:00-07:00",
+              "2023-09-15T10:00:00-07:00",
+              "2023-09-15T11:00:00-07:00",
+              "2023-09-15T12:00:00-07:00",
+              "2023-09-15T13:00:00-07:00",
+              "2023-09-15T14:00:00-07:00",
+              "2023-09-15T15:00:00-07:00",
+              "2023-09-15T16:00:00-07:00",
+              "2023-09-15T17:00:00-07:00",
+              "2023-09-15T18:00:00-07:00",
+              "2023-09-15T19:00:00-07:00",
+              "2023-09-15T20:00:00-07:00",
+              "2023-09-15T21:00:00-07:00",
+              "2023-09-15T22:00:00-07:00",
+              "2023-09-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-09-15T00:00:00-07:00",
+              "2023-09-15T01:00:00-07:00",
+              "2023-09-15T02:00:00-07:00",
+              "2023-09-15T03:00:00-07:00",
+              "2023-09-15T04:00:00-07:00",
+              "2023-09-15T05:00:00-07:00",
+              "2023-09-15T06:00:00-07:00",
+              "2023-09-15T07:00:00-07:00",
+              "2023-09-15T08:00:00-07:00",
+              "2023-09-15T09:00:00-07:00",
+              "2023-09-15T10:00:00-07:00",
+              "2023-09-15T11:00:00-07:00",
+              "2023-09-15T12:00:00-07:00",
+              "2023-09-15T13:00:00-07:00",
+              "2023-09-15T14:00:00-07:00",
+              "2023-09-15T15:00:00-07:00",
+              "2023-09-15T16:00:00-07:00",
+              "2023-09-15T17:00:00-07:00",
+              "2023-09-15T18:00:00-07:00",
+              "2023-09-15T19:00:00-07:00",
+              "2023-09-15T20:00:00-07:00",
+              "2023-09-15T21:00:00-07:00",
+              "2023-09-15T22:00:00-07:00",
+              "2023-09-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2023-10-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-10-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-10-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-10-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-10-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 15.1529,
+            "max": 37.8992
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-10-15T00:00:00-07:00",
+              "2023-10-15T01:00:00-07:00",
+              "2023-10-15T02:00:00-07:00",
+              "2023-10-15T03:00:00-07:00",
+              "2023-10-15T04:00:00-07:00",
+              "2023-10-15T05:00:00-07:00",
+              "2023-10-15T06:00:00-07:00",
+              "2023-10-15T07:00:00-07:00",
+              "2023-10-15T08:00:00-07:00",
+              "2023-10-15T09:00:00-07:00",
+              "2023-10-15T10:00:00-07:00",
+              "2023-10-15T11:00:00-07:00",
+              "2023-10-15T12:00:00-07:00",
+              "2023-10-15T13:00:00-07:00",
+              "2023-10-15T14:00:00-07:00",
+              "2023-10-15T15:00:00-07:00",
+              "2023-10-15T16:00:00-07:00",
+              "2023-10-15T17:00:00-07:00",
+              "2023-10-15T18:00:00-07:00",
+              "2023-10-15T19:00:00-07:00",
+              "2023-10-15T20:00:00-07:00",
+              "2023-10-15T21:00:00-07:00",
+              "2023-10-15T22:00:00-07:00",
+              "2023-10-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-10-15T00:00:00-07:00",
+              "2023-10-15T01:00:00-07:00",
+              "2023-10-15T02:00:00-07:00",
+              "2023-10-15T03:00:00-07:00",
+              "2023-10-15T04:00:00-07:00",
+              "2023-10-15T05:00:00-07:00",
+              "2023-10-15T06:00:00-07:00",
+              "2023-10-15T07:00:00-07:00",
+              "2023-10-15T08:00:00-07:00",
+              "2023-10-15T09:00:00-07:00",
+              "2023-10-15T10:00:00-07:00",
+              "2023-10-15T11:00:00-07:00",
+              "2023-10-15T12:00:00-07:00",
+              "2023-10-15T13:00:00-07:00",
+              "2023-10-15T14:00:00-07:00",
+              "2023-10-15T15:00:00-07:00",
+              "2023-10-15T16:00:00-07:00",
+              "2023-10-15T17:00:00-07:00",
+              "2023-10-15T18:00:00-07:00",
+              "2023-10-15T19:00:00-07:00",
+              "2023-10-15T20:00:00-07:00",
+              "2023-10-15T21:00:00-07:00",
+              "2023-10-15T22:00:00-07:00",
+              "2023-10-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2023-11-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-11-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-11-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-11-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-11-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 15.4183,
+            "max": 30.5321
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-11-15T00:00:00-07:00",
+              "2023-11-15T01:00:00-07:00",
+              "2023-11-15T02:00:00-07:00",
+              "2023-11-15T03:00:00-07:00",
+              "2023-11-15T04:00:00-07:00",
+              "2023-11-15T05:00:00-07:00",
+              "2023-11-15T06:00:00-07:00",
+              "2023-11-15T07:00:00-07:00",
+              "2023-11-15T08:00:00-07:00",
+              "2023-11-15T09:00:00-07:00",
+              "2023-11-15T10:00:00-07:00",
+              "2023-11-15T11:00:00-07:00",
+              "2023-11-15T12:00:00-07:00",
+              "2023-11-15T13:00:00-07:00",
+              "2023-11-15T14:00:00-07:00",
+              "2023-11-15T15:00:00-07:00",
+              "2023-11-15T16:00:00-07:00",
+              "2023-11-15T17:00:00-07:00",
+              "2023-11-15T18:00:00-07:00",
+              "2023-11-15T19:00:00-07:00",
+              "2023-11-15T20:00:00-07:00",
+              "2023-11-15T21:00:00-07:00",
+              "2023-11-15T22:00:00-07:00",
+              "2023-11-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-11-15T00:00:00-07:00",
+              "2023-11-15T01:00:00-07:00",
+              "2023-11-15T02:00:00-07:00",
+              "2023-11-15T03:00:00-07:00",
+              "2023-11-15T04:00:00-07:00",
+              "2023-11-15T05:00:00-07:00",
+              "2023-11-15T06:00:00-07:00",
+              "2023-11-15T07:00:00-07:00",
+              "2023-11-15T08:00:00-07:00",
+              "2023-11-15T09:00:00-07:00",
+              "2023-11-15T10:00:00-07:00",
+              "2023-11-15T11:00:00-07:00",
+              "2023-11-15T12:00:00-07:00",
+              "2023-11-15T13:00:00-07:00",
+              "2023-11-15T14:00:00-07:00",
+              "2023-11-15T15:00:00-07:00",
+              "2023-11-15T16:00:00-07:00",
+              "2023-11-15T17:00:00-07:00",
+              "2023-11-15T18:00:00-07:00",
+              "2023-11-15T19:00:00-07:00",
+              "2023-11-15T20:00:00-07:00",
+              "2023-11-15T21:00:00-07:00",
+              "2023-11-15T22:00:00-07:00",
+              "2023-11-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2023-12-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-12-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-12-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-12-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2023-12-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 4.3136,
+            "max": 22.7512
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-12-15T00:00:00-07:00",
+              "2023-12-15T01:00:00-07:00",
+              "2023-12-15T02:00:00-07:00",
+              "2023-12-15T03:00:00-07:00",
+              "2023-12-15T04:00:00-07:00",
+              "2023-12-15T05:00:00-07:00",
+              "2023-12-15T06:00:00-07:00",
+              "2023-12-15T07:00:00-07:00",
+              "2023-12-15T08:00:00-07:00",
+              "2023-12-15T09:00:00-07:00",
+              "2023-12-15T10:00:00-07:00",
+              "2023-12-15T11:00:00-07:00",
+              "2023-12-15T12:00:00-07:00",
+              "2023-12-15T13:00:00-07:00",
+              "2023-12-15T14:00:00-07:00",
+              "2023-12-15T15:00:00-07:00",
+              "2023-12-15T16:00:00-07:00",
+              "2023-12-15T17:00:00-07:00",
+              "2023-12-15T18:00:00-07:00",
+              "2023-12-15T19:00:00-07:00",
+              "2023-12-15T20:00:00-07:00",
+              "2023-12-15T21:00:00-07:00",
+              "2023-12-15T22:00:00-07:00",
+              "2023-12-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2023-12-15T00:00:00-07:00",
+              "2023-12-15T01:00:00-07:00",
+              "2023-12-15T02:00:00-07:00",
+              "2023-12-15T03:00:00-07:00",
+              "2023-12-15T04:00:00-07:00",
+              "2023-12-15T05:00:00-07:00",
+              "2023-12-15T06:00:00-07:00",
+              "2023-12-15T07:00:00-07:00",
+              "2023-12-15T08:00:00-07:00",
+              "2023-12-15T09:00:00-07:00",
+              "2023-12-15T10:00:00-07:00",
+              "2023-12-15T11:00:00-07:00",
+              "2023-12-15T12:00:00-07:00",
+              "2023-12-15T13:00:00-07:00",
+              "2023-12-15T14:00:00-07:00",
+              "2023-12-15T15:00:00-07:00",
+              "2023-12-15T16:00:00-07:00",
+              "2023-12-15T17:00:00-07:00",
+              "2023-12-15T18:00:00-07:00",
+              "2023-12-15T19:00:00-07:00",
+              "2023-12-15T20:00:00-07:00",
+              "2023-12-15T21:00:00-07:00",
+              "2023-12-15T22:00:00-07:00",
+              "2023-12-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    },
+    {
+      "date": "2024-01-15",
+      "heatmap_status": "reused_valid",
+      "environment_status": "success",
+      "heatmap_tiles": 845,
+      "environment_locations": [
+        426,
+        7
+      ],
+      "raw_files": [
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2024-01-15_60m_tcm.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2024-01-15_environment_tile_426.json",
+        "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2024-01-15_environment_tile_7.json"
+      ],
+      "validation": {
+        "heatmap": {
+          "date": "2024-01-15",
+          "feature_count": 845,
+          "expected_feature_count": 845,
+          "missing_tile_ids": [],
+          "duplicate_tile_ids": [],
+          "geometry_mismatches": [],
+          "missing_temperature_tiles": [],
+          "temperature_range": {
+            "min": 2.152,
+            "max": 18.1542
+          }
+        },
+        "environment": [
+          {
+            "tile_id": 426,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2024-01-15T00:00:00-07:00",
+              "2024-01-15T01:00:00-07:00",
+              "2024-01-15T02:00:00-07:00",
+              "2024-01-15T03:00:00-07:00",
+              "2024-01-15T04:00:00-07:00",
+              "2024-01-15T05:00:00-07:00",
+              "2024-01-15T06:00:00-07:00",
+              "2024-01-15T07:00:00-07:00",
+              "2024-01-15T08:00:00-07:00",
+              "2024-01-15T09:00:00-07:00",
+              "2024-01-15T10:00:00-07:00",
+              "2024-01-15T11:00:00-07:00",
+              "2024-01-15T12:00:00-07:00",
+              "2024-01-15T13:00:00-07:00",
+              "2024-01-15T14:00:00-07:00",
+              "2024-01-15T15:00:00-07:00",
+              "2024-01-15T16:00:00-07:00",
+              "2024-01-15T17:00:00-07:00",
+              "2024-01-15T18:00:00-07:00",
+              "2024-01-15T19:00:00-07:00",
+              "2024-01-15T20:00:00-07:00",
+              "2024-01-15T21:00:00-07:00",
+              "2024-01-15T22:00:00-07:00",
+              "2024-01-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          },
+          {
+            "tile_id": 7,
+            "location_count": 1,
+            "hour_count": 24,
+            "timestamps": [
+              "2024-01-15T00:00:00-07:00",
+              "2024-01-15T01:00:00-07:00",
+              "2024-01-15T02:00:00-07:00",
+              "2024-01-15T03:00:00-07:00",
+              "2024-01-15T04:00:00-07:00",
+              "2024-01-15T05:00:00-07:00",
+              "2024-01-15T06:00:00-07:00",
+              "2024-01-15T07:00:00-07:00",
+              "2024-01-15T08:00:00-07:00",
+              "2024-01-15T09:00:00-07:00",
+              "2024-01-15T10:00:00-07:00",
+              "2024-01-15T11:00:00-07:00",
+              "2024-01-15T12:00:00-07:00",
+              "2024-01-15T13:00:00-07:00",
+              "2024-01-15T14:00:00-07:00",
+              "2024-01-15T15:00:00-07:00",
+              "2024-01-15T16:00:00-07:00",
+              "2024-01-15T17:00:00-07:00",
+              "2024-01-15T18:00:00-07:00",
+              "2024-01-15T19:00:00-07:00",
+              "2024-01-15T20:00:00-07:00",
+              "2024-01-15T21:00:00-07:00",
+              "2024-01-15T22:00:00-07:00",
+              "2024-01-15T23:00:00-07:00"
+            ],
+            "parameter_names": [
+              "air_quality:idx",
+              "air_quality_no2:idx",
+              "air_quality_o3:idx",
+              "air_quality_pm10:idx",
+              "air_quality_pm2p5:idx",
+              "air_quality_so2:idx",
+              "apparent_temperature_celsius",
+              "aqi_us_co",
+              "cloud_cover_octas",
+              "co2_ppm",
+              "heat_index_celsius",
+              "methane_ppb",
+              "precipitation_mm",
+              "relative_humidity_percent",
+              "wet_bulb_temperature_celsius"
+            ],
+            "null_counts": {
+              "methane_ppb": 24,
+              "co2_ppm": 24
+            },
+            "model_excluded_parameters": [
+              "methane_ppb",
+              "co2_ppm"
+            ]
+          }
+        ]
+      },
+      "credits_used": 2900
+    }
+  ]
+}

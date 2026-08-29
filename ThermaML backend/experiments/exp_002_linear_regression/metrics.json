@@ -1,0 +1,13 @@
+{
+  "target": "temperature",
+  "temperature_unit": "Celsius",
+  "training_samples": 143,
+  "validation_samples": 8,
+  "test_samples": 9,
+  "number_of_tiles": 6,
+  "number_of_dates": 37,
+  "number_of_features": 43,
+  "mae": 0.2310042226616239,
+  "rmse": 0.23465110637448636,
+  "r2": -69.15479962324089
+}

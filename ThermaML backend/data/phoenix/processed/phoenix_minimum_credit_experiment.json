@@ -1,0 +1,90 @@
+{
+  "method": "minimum_credit_spatial_environment_diagnostic",
+  "data_is_local_only": true,
+  "heatmap_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\heatmaps\\phoenix_2023-07-15_60m_tcm.json",
+  "selected_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_spatial_test_tiles.json",
+  "environment_file": "C:\\Users\\Me\\Desktop\\Hackathon\\fortyguard\\main hackathon\\ThermaML backend\\data\\phoenix\\raw\\environment\\phoenix_2023-07-15_environment_20_points.json",
+  "heatmap_tile_count": 845,
+  "selected_tile_ids": [
+    7,
+    8,
+    426,
+    814,
+    844
+  ],
+  "cached_selected_tile_ids": [
+    426
+  ],
+  "new_environment_requests_required": 4,
+  "new_environment_tile_ids": [
+    7,
+    8,
+    814,
+    844
+  ],
+  "date_policy": "Use the same existing diagnostic date.",
+  "request_policy": "Reuse the existing env_params payload and omit analysis.",
+  "historical_heatmap_cost_credits": 4220,
+  "environment_request_cost_credits": null,
+  "environment_cost_status": "Unknown; no measurement is recorded.",
+  "credit_limit_credits": 1000000,
+  "maximum_project_spend_at_50_percent_credits": 500000,
+  "live_credit_balance_required_before_request": true,
+  "estimated_new_environment_cost_formula": "4 * C, where C is the measured cost of one env_params request",
+  "approval_required_before_request": true,
+  "scientific_purpose": "Test whether geographically separated locations receive meaningfully different environmental hourly series.",
+  "pairwise_distances_km": [
+    {
+      "tile_a": 426,
+      "tile_b": 7,
+      "distance_km": 1.239333220551509
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 844,
+      "distance_km": 1.1991066956274048
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 8,
+      "distance_km": 1.1991053848931181
+    },
+    {
+      "tile_a": 426,
+      "tile_b": 814,
+      "distance_km": 1.1989891105004555
+    },
+    {
+      "tile_a": 7,
+      "tile_b": 844,
+      "distance_km": 1.6297441907216232
+    },
+    {
+      "tile_a": 7,
+      "tile_b": 8,
+      "distance_km": 1.814260774161055
+    },
+    {
+      "tile_a": 7,
+      "tile_b": 814,
+      "distance_km": 2.437908819394986
+    },
+    {
+      "tile_a": 844,
+      "tile_b": 8,
+      "distance_km": 2.3982120805198544
+    },
+    {
+      "tile_a": 844,
+      "tile_b": 814,
+      "distance_km": 1.813260828709327
+    },
+    {
+      "tile_a": 8,
+      "tile_b": 814,
+      "distance_km": 1.5693762141652676
+    }
+  ],
+  "minimum_pairwise_distance_km": 1.1989891105004555,
+  "maximum_pairwise_distance_km": 2.437908819394986
+}
