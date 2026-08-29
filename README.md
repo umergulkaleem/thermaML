@@ -2,107 +2,131 @@
 
 ### Data-Driven Urban Heat Modeling and Heat-Mitigation Decision Support
 
-ThermaML is a research-oriented machine learning system for modeling local daily thermal conditions across selected urban locations and evaluating potential heat-mitigation strategies.
+ThermaML is a research-oriented machine learning system for modeling local daily thermal conditions and exploring evidence-based heat-mitigation strategies.
 
-The system transforms hourly environmental observations into date-aligned daily features, evaluates classical machine learning models using chronological validation, and connects model predictions with an evidence-based intervention simulator.
+The system uses environmental observations obtained through the **FortyGuard API**, transforms date-aligned hourly environmental measurements into daily features, evaluates classical machine learning regression models using chronological validation, and connects model predictions to an evidence-based heat-mitigation scenario engine.
 
-The current study focuses on **six urban tiles in Phoenix, Arizona across 37 observation dates**, providing a reproducible prototype for data-driven urban heat analysis and decision support.
+The current study focuses on **six urban tiles in Phoenix, Arizona across 37 observation dates**, providing a controlled and reproducible experimental setting for investigating data-driven urban thermal modeling and decision support.
 
----
-
-## Research Motivation
-
-Urban heat is influenced by meteorological conditions, surface characteristics, and local spatial context. Understanding this variation can help identify areas of elevated thermal exposure and support evaluation of potential mitigation strategies.
-
-ThermaML investigates whether environmental observations can provide useful predictions of local daily thermal conditions while maintaining a strict separation between:
-
-* **data-driven ML predictions**, learned from environmental observations
-* **model evaluation**, performed using chronological validation
-* **intervention scenarios**, based on published physical evidence rather than learned causal relationships
-
-This distinction is central to the design of the system.
+> **Current scope:** ThermaML is a research prototype for daily tile-level thermal estimation. It is not currently an hourly forecasting system or a city-wide urban heat model.
 
 ---
 
-## Research Question
+## What ThermaML Does
+
+```text
+                    FortyGuard API
+                          │
+                          ▼
+              Date-Specific Environmental
+                   Observations
+                          │
+                          ▼
+                  Hourly Measurements
+                          │
+                          ▼
+               Daily Feature Engineering
+                          │
+                          ▼
+                 Tile-Date Dataset
+                          │
+                 ┌────────┴────────┐
+                 ▼                 ▼
+          Linear Regression   Random Forest
+                 │                 │
+                 └────────┬────────┘
+                          ▼
+                Daily Thermal Prediction
+                          │
+                          ▼
+              Heat-Mitigation Scenarios
+                 ┌────────┼────────┐
+                 ▼        ▼        ▼
+             Tree Canopy Cool Roof Cool Pavement
+                 │        │        │
+                 └────────┼────────┘
+                          ▼
+                Decision-Support Output
+```
+
+The project separates **machine learning prediction** from **intervention simulation**. The ML models learn relationships from environmental observations, while intervention effects are supplied through published scientific evidence and public planning sources rather than being learned as causal effects from the dataset.
+
+---
+
+# Research Motivation
+
+Urban heat varies with meteorological conditions, surface characteristics, and local environmental context. Data-driven models can potentially help characterize this variation and provide a computational basis for exploring heat-management strategies.
+
+ThermaML investigates this problem through a reproducible pipeline that combines:
+
+* environmental observations
+* daily feature engineering
+* supervised regression
+* chronological temporal validation
+* model comparison
+* evidence-based mitigation scenarios
+* interactive decision support
+
+A central design principle is maintaining a distinction between **what the data-driven model predicts** and **what the intervention literature suggests may happen under a mitigation scenario**.
+
+---
+
+# Research Question
 
 > **Can date-aligned environmental observations from the FortyGuard API be used to model local daily thermal variation across selected Phoenix urban tiles, and can those predictions be coupled with evidence-based mitigation scenarios to support heat-management decisions?**
 
-The current implementation evaluates this question using classical regression models on a small Phoenix study area.
+The current implementation evaluates this question using Linear Regression and Random Forest on a small Phoenix study area.
 
 ---
 
-## Study at a Glance
+# FortyGuard API Usage
 
-| Component               | Description                                     |
-| ----------------------- | ----------------------------------------------- |
-| Study area              | Phoenix, Arizona                                |
-| Spatial units           | 6 urban tiles                                   |
-| Observation dates       | 37                                              |
-| Tile-date observations  | 160                                             |
-| Raw temporal resolution | Hourly                                          |
-| ML target               | 24-hour mean apparent temperature               |
-| Target unit             | °C                                              |
-| Models                  | Linear Regression, Random Forest                |
-| Primary model           | Random Forest                                   |
-| Validation              | Expanding-window chronological cross-validation |
-| Primary metric          | Mean Absolute Error (MAE)                       |
+**FortyGuard is the primary environmental data source for ThermaML.**
 
-The current dataset contains **160 tile-date observations and 82 distinct daily target values** across the six selected tiles.
+The project uses the FortyGuard Environmental API to obtain date-specific environmental observations for selected Phoenix urban tiles.
 
----
+The API is not simply used as an external reference. Its environmental observations form the underlying dataset used for feature engineering and model development.
 
-## System Overview
+### Data acquisition workflow
 
 ```text
-              FortyGuard Environmental API
-                         │
-                         ▼
-               Hourly Environmental Data
-                         │
-                         ▼
-                Data Preparation
-                         │
-                         ▼
-              Daily Feature Engineering
-                         │
-                         ▼
-              ┌──────────────────────┐
-              │   Regression Models  │
-              │                      │
-              │ Linear Regression    │
-              │ Random Forest        │
-              └──────────┬───────────┘
-                         │
-                         ▼
-          Expanding-Window Temporal Validation
-                         │
-                         ▼
-              Daily Thermal Prediction
-                         │
-                         ▼
-              Heat-Mitigation Scenarios
-                         │
-                         ▼
-             Interactive Decision Support
+FortyGuard Environmental API
+             │
+             ▼
+       Phoenix Tile
+             │
+             ▼
+    Date-specific request
+             │
+             ▼
+   24-hour environmental series
+             │
+             ▼
+       Data validation
+             │
+             ▼
+     Daily aggregation
+             │
+             ▼
+       Model-ready data
 ```
-
----
-
-# Data Source
-
-ThermaML uses environmental observations retrieved through the **FortyGuard Environmental & Heatmap API**.
 
 ### Study configuration
 
-* **Region:** Phoenix, Arizona
-* **Tiles:** `7`, `426`, `8`, `844`, `420`, `814`
-* **Observation dates:** 37
-* **Date range:** `2023-01-01` to `2024-01-28`
-* **Raw temporal resolution:** hourly environmental observations
-* **Curated dataset:** 160 tile-date records
+| Component               | Configuration                        |
+| ----------------------- | ------------------------------------ |
+| Data source             | FortyGuard Environmental API         |
+| Study region            | Phoenix, Arizona                     |
+| Spatial units           | 6 urban tiles                        |
+| Tile IDs                | `7`, `426`, `8`, `844`, `420`, `814` |
+| Observation dates       | 37                                   |
+| Date range              | `2023-01-01` to `2024-01-28`         |
+| Raw temporal resolution | Hourly                               |
+| Curated observations    | 160 tile-date records                |
 
-The raw environmental observations contain meteorological and environmental variables including:
+### Environmental variables
+
+The retrieved observations include environmental and meteorological variables such as:
 
 * apparent temperature
 * air temperature
@@ -112,9 +136,31 @@ The raw environmental observations contain meteorological and environmental vari
 * solar radiation
 * surface temperature
 * elevation
-* geographic coordinates
+* latitude
+* longitude
 
-The hourly observations are transformed into daily summary features before model training.
+The raw hourly observations are converted into date-aligned daily records before being supplied to the regression models.
+
+---
+
+# Study at a Glance
+
+| Component               | Description                                     |
+| ----------------------- | ----------------------------------------------- |
+| Study area              | Phoenix, Arizona                                |
+| Spatial units           | 6 urban tiles                                   |
+| Observation dates       | 37                                              |
+| Tile-date records       | 160                                             |
+| Raw temporal resolution | Hourly                                          |
+| ML target               | 24-hour mean apparent temperature               |
+| Target unit             | °C                                              |
+| Models                  | Linear Regression, Random Forest                |
+| Primary model           | Random Forest                                   |
+| Validation              | Expanding-window chronological cross-validation |
+| Primary metric          | MAE                                             |
+| Scenario layer          | Tree canopy, cool roofs, cool pavement          |
+
+The dataset contains **160 tile-date observations and 82 distinct daily target values** across the six selected tiles.
 
 ---
 
@@ -124,17 +170,30 @@ The machine learning target is:
 
 > **24-hour mean apparent temperature (°C)**
 
-For each tile and observation date, the hourly apparent-temperature observations are aggregated to produce a single daily target.
+For each tile and observation date, the hourly apparent-temperature observations are aggregated into a single daily target.
 
-This target was selected because it provides meaningful temporal variation across the observation period while remaining compatible with the available date-aligned environmental observations.
+This produces a date-specific thermal target with meaningful temporal variation across the study period.
 
-The current system therefore performs **daily tile-level thermal estimation**, not hourly forecasting.
+The target definition is important because ThermaML is designed around **daily thermal estimation**, not hourly temperature forecasting.
+
+```text
+24 hourly apparent-temperature observations
+                    │
+                    ▼
+             Daily aggregation
+                    │
+                    ▼
+       Mean apparent temperature
+                    │
+                    ▼
+              ML target (°C)
+```
 
 ---
 
 # Feature Engineering
 
-ThermaML converts hourly environmental observations into date-aligned daily features.
+ThermaML converts hourly environmental observations into structured daily tile-date records.
 
 For relevant environmental variables, daily summary statistics are calculated, including:
 
@@ -142,13 +201,15 @@ For relevant environmental variables, daily summary statistics are calculated, i
 * minimum
 * maximum
 
-This produces a structured tile-date dataset suitable for classical regression.
+This transforms the raw hourly observations into a compact feature representation suitable for classical regression.
 
 The resulting feature set is versioned as:
 
-`features_v1`
+```text
+features_v1
+```
 
-The feature engineering process is deterministic so that the same raw observations can reproduce the model-ready dataset.
+The feature-engineering process is deterministic, allowing the model-ready dataset to be reproduced from the same underlying observations.
 
 ---
 
@@ -156,54 +217,62 @@ The feature engineering process is deterministic so that the same raw observatio
 
 ThermaML currently evaluates two regression approaches.
 
-### Linear Regression
+## Linear Regression
 
-Linear Regression provides a simple parametric baseline and establishes whether a linear relationship between environmental features and the daily thermal target is sufficient to explain the observed variation.
+Linear Regression provides a transparent parametric baseline.
 
-### Random Forest
+It evaluates whether a linear relationship between the engineered environmental features and daily thermal conditions can adequately explain the observed variation.
 
-Random Forest provides a nonlinear ensemble baseline capable of modeling interactions and nonlinear relationships between environmental variables.
+## Random Forest
 
-Random Forest is the primary model in the current implementation because it achieved the strongest performance among the evaluated approaches.
+Random Forest provides a nonlinear ensemble model capable of representing nonlinear relationships and interactions between environmental variables.
+
+Random Forest is the primary model in the current implementation because it achieved the strongest performance among the evaluated models.
 
 ---
 
 # Temporal Validation
 
-Random train-test splitting can introduce temporal leakage when environmental observations from later dates influence predictions for earlier dates.
+For environmental data, random train-test splitting can produce overly optimistic results when observations from later dates influence model evaluation.
 
-To reduce this risk, ThermaML uses **expanding-window chronological cross-validation**.
+ThermaML therefore uses **expanding-window chronological cross-validation**.
 
-The validation principle is:
-
-```text
-Training dates < Evaluation dates
-```
-
-For every evaluation fold:
+The fundamental constraint is:
 
 ```text
-Past observations
-       │
-       ▼
-   Training
-       │
-       ▼
-Future observations
-       │
-       ▼
-  Evaluation
+Maximum training date < Minimum evaluation date
 ```
 
-The training period therefore always precedes the evaluation period.
+The evaluation process follows:
 
-This provides a more realistic evaluation of how the models perform when applied to later observations.
+```text
+Historical observations
+          │
+          ▼
+       Training
+          │
+          ▼
+   Later observations
+          │
+          ▼
+      Evaluation
+          │
+          ▼
+     Expand window
+          │
+          ▼
+      Next fold
+```
+
+This ensures that each evaluation period occurs after the corresponding training period.
+
+The approach provides a more realistic assessment of temporal generalization than a random split.
 
 ---
 
 # Model Evaluation
 
-## Key Results
+## Pooled Results
 
 | Model                 |   Pooled MAE |  Pooled RMSE | Pooled R² |
 | --------------------- | -----------: | -----------: | --------: |
@@ -213,9 +282,11 @@ This provides a more realistic evaluation of how the models perform when applied
 
 Under the pooled chronological evaluation, **Random Forest achieved the lowest MAE** among the evaluated approaches.
 
-The Random Forest result also outperformed the naive historical-mean baseline, providing evidence that the environmental feature set contains useful information for modeling variation in the daily target within this study dataset.
+It also outperformed the naive historical-mean reference.
 
-These results should be interpreted within the scope of the current six-tile Phoenix study and should not be treated as evidence of city-wide generalization.
+These results indicate that the environmental features contain useful information for modeling daily thermal variation within the current study dataset.
+
+However, the results should be interpreted within the scope of the six selected Phoenix tiles and should not be treated as evidence of city-wide predictive performance.
 
 ---
 
@@ -231,183 +302,333 @@ These results should be interpreted within the scope of the current six-tile Pho
 |          6 | 2023-01-01 → 2024-01-01 | 2024-01-15 → 2024-01-28  |              3.445 °C |      **0.977 °C** |          10.178 °C |
 | **Pooled** | **Full study span**     | **All evaluation folds** |          **4.751 °C** |      **2.826 °C** |       **6.828 °C** |
 
-The variation between folds demonstrates that model performance is not uniform across time. This is one reason chronological evaluation is important for the current dataset.
-
----
-
-# Prediction and Intervention Simulation
-
-A key design principle in ThermaML is that **ML prediction and intervention simulation are separate components**.
-
-### ML prediction
-
-The machine learning model estimates the baseline thermal condition using environmental observations.
-
-```text
-Environmental Features
-          │
-          ▼
-    Random Forest
-          │
-          ▼
-Baseline Daily Temperature
-```
-
-### Intervention simulation
-
-The intervention layer is applied **after** the baseline prediction.
-
-```text
-Baseline Prediction
-        │
-        ├── Tree Canopy
-        │
-        ├── Cool Roof
-        │
-        └── Cool Pavement
-                │
-                ▼
-       Scenario Estimate
-       + Planning Costs
-```
-
-The intervention layer does **not** train the ML model and does not claim to learn causal intervention effects from the dataset.
-
-Instead, it applies evidence-based approximations from published research and public guidance.
+The variation between folds demonstrates that predictive performance changes across different temporal periods, reinforcing the importance of chronological evaluation.
 
 ---
 
 # Heat-Mitigation Decision Support
 
-ThermaML currently supports three intervention scenarios.
+ThermaML adds a separate scenario layer after generating a baseline ML prediction.
+
+```text
+Environmental Features
+          │
+          ▼
+     ML Prediction
+          │
+          ▼
+ Baseline Temperature
+          │
+     ┌────┼────┐
+     ▼    ▼    ▼
+   Trees Roof Pavement
+     │    │    │
+     └────┼────┘
+          ▼
+   Scenario Estimates
+          │
+          ▼
+  Planning Cost Estimates
+```
+
+The intervention engine does **not** retrain the machine learning models.
+
+It also does not claim to estimate causal intervention effects from the training dataset.
+
+Instead, it applies values derived from published research, government guidance, and public planning information.
+
+---
+
+# Intervention Parameters and Sources
 
 ## 1. Tree Canopy Expansion
 
-**Input**
+### Model input
 
-`tree_canopy_increase_percent`
+```text
+tree_canopy_increase_percent
+```
 
 Configured range:
 
-`0–30 percentage points`
+```text
+0–30 percentage points
+```
 
-**Estimated effect**
+### Estimated thermal effect
 
-`0.14 °C air-temperature reduction per percentage point`
+```text
+0.14 °C air-temperature reduction
+per percentage-point increase
+```
 
-**Planning cost**
+### Cost
 
-`$1,088 per mature tree`
+```text
+$1,088 per mature tree
+```
 
-The effect is based on published Phoenix residential-neighborhood research and is treated as a planning approximation rather than a universal city-wide relationship.
+### Source of the thermal effect
 
-**Source**
+The **0.14 °C per percentage-point value** is based on:
 
-Middel, A., Chhetri, N., & Quay, R. (2015).
+**Middel, A., Chhetri, N., & Quay, R. (2015)**
+*Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods.*
 
 DOI:
 
-`10.1016/j.ufug.2014.09.010`
-
----
-
-## 2. Cool Roofs
-
-**Input**
-
-`cool_roof_coverage_percent`
-
-Configured range:
-
-`0–100%`
-
-**Estimated effect**
-
-Up to approximately:
-
-`0.30 °C`
-
-at full modeled coverage.
-
-**Planning cost**
-
-`$1.15 / sq ft`
-
-The effect is represented using a simplified interpolation for scenario analysis. Actual effects depend on roof characteristics, neighborhood configuration, weather conditions, and implementation details.
-
----
-
-## 3. Cool Pavement
-
-**Input**
-
-`cool_pavement_coverage_percent`
-
-Configured range:
-
-`0–100%`
-
-**Estimated effect**
-
-`10.5–12.0 °F` pavement surface-temperature reduction.
-
-This corresponds approximately to:
-
-`5.8–6.7 °C`
-
-The crucial distinction is that this is a **surface-temperature effect**, not an equivalent air-temperature reduction.
-
-Therefore, ThermaML does **not subtract the cool-pavement effect from the predicted air temperature**.
-
-**Planning cost**
-
-`$3.00 / sq ft`
-
----
-
-# Cost and Scenario Modeling
-
-When the required quantities are supplied, ThermaML estimates planning costs.
-
-Examples include:
-
 ```text
-Tree cost
-= number of trees × $1,088
-
-Cool-roof cost
-= roof area × $1.15/sq ft
-
-Cool-pavement cost
-= paved area × $3.00/sq ft
+10.1016/j.ufug.2014.09.010
 ```
 
-These are planning estimates rather than contractor quotations or guaranteed implementation costs.
+The study evaluates heat-mitigation strategies in Phoenix residential neighborhoods and provides the scientific basis for the configured tree-canopy effect.
+
+### Source of the tree cost
+
+The **$1,088 per mature tree** planning value is based on the Phoenix urban forestry cost assumption used by the project.
+
+It is treated as a **planning estimate**, not a guaranteed current implementation cost.
+
+### Interpretation
+
+The 0.14 °C value is not treated as a universal physical law. It is an evidence-based approximation derived from a Phoenix-specific study and applied within the configured scenario range.
+
+---
+
+# 2. Cool Roofs
+
+### Model input
+
+```text
+cool_roof_coverage_percent
+```
+
+Configured range:
+
+```text
+0–100%
+```
+
+### Estimated thermal effect
+
+At full modeled coverage:
+
+```text
+≈ 0.30 °C air-temperature reduction
+```
+
+The scenario engine uses simplified linear interpolation between zero coverage and the modeled full-coverage effect.
+
+### Cost
+
+```text
+$1.15 / sq ft
+```
+
+### Source of the thermal effect
+
+The **0.30 °C modeled neighborhood air-temperature effect** is based on:
+
+**Middel, A., Chhetri, N., & Quay, R. (2015)**
+*Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods.*
+
+DOI:
+
+```text
+10.1016/j.ufug.2014.09.010
+```
+
+### Source of the cost
+
+The **$1.15/sq ft** planning value is the midpoint of the U.S. Department of Energy example range of approximately **$0.80–$1.50 per square foot** for cool-roof implementation.
+
+Source:
+
+**U.S. Department of Energy, Cool Roofs Guide**
+
+### Interpretation
+
+The modeled 0.30 °C effect is treated as a neighborhood-level scenario approximation. Actual cooling depends on roof materials, building characteristics, urban morphology, weather, and implementation conditions.
+
+---
+
+# 3. Cool Pavement
+
+### Model input
+
+```text
+cool_pavement_coverage_percent
+```
+
+Configured range:
+
+```text
+0–100%
+```
+
+### Estimated effect
+
+The project retains the reported pavement surface-temperature reduction as:
+
+```text
+10.5–12.0 °F
+```
+
+approximately:
+
+```text
+5.8–6.7 °C
+```
+
+### Critical modeling distinction
+
+The cool-pavement effect is a **surface-temperature reduction**.
+
+It is **not treated as an equivalent air-temperature reduction**.
+
+Therefore:
+
+```text
+Baseline air temperature
+        +
+Cool pavement scenario
+        =
+Air temperature unchanged by pavement effect
+
+Surface temperature
+        ↓
+Estimated reduction of approximately 5.8–6.7 °C
+```
+
+ThermaML deliberately does not subtract the pavement effect from the ML air-temperature prediction.
+
+### Cost
+
+```text
+$3.00 / sq ft
+```
+
+### Sources
+
+The cool-pavement scenario is informed by:
+
+* **City of Phoenix Cool Pavement Program**
+* **U.S. Environmental Protection Agency Heat Island Community Actions Database**
+* **City of Phoenix cool-pavement feasibility/planning documentation**
+
+These sources provide the basis for treating cool pavement as a surface-temperature intervention rather than directly converting its effect into an air-temperature reduction.
+
+---
+
+# Intervention Cost Model
+
+When the required quantities are provided, ThermaML estimates planning costs.
+
+### Trees
+
+```text
+Tree Cost
+= Number of Trees × $1,088
+```
+
+### Cool Roofs
+
+```text
+Roof Cost
+= Roof Area × $1.15/sq ft
+```
+
+### Cool Pavement
+
+```text
+Pavement Cost
+= Paved Area × $3.00/sq ft
+```
+
+These values are **planning assumptions**, not contractor quotations.
+
+Actual implementation costs can vary substantially according to materials, location, labor, project scale, site preparation, and procurement.
 
 ---
 
 # Interactive Decision-Support Application
 
-ThermaML includes a React/Vite frontend connected to a FastAPI backend.
+ThermaML includes a full-stack interactive application consisting of:
 
-The interface allows a user to:
+* React
+* Vite
+* FastAPI
+* Python machine learning backend
 
-1. Select an available observation date.
-2. Select an available Phoenix tile.
-3. Select a trained model.
-4. Generate a daily thermal prediction.
-5. Compare Linear Regression, Random Forest, and the naive reference.
-6. Configure heat-mitigation interventions.
-7. View estimated thermal effects and planning costs.
+The frontend communicates with the FastAPI backend through HTTP endpoints.
 
-The application obtains available dates, tiles, models, and intervention information from the backend rather than relying on hardcoded tile metadata.
+### Application workflow
 
-### Current supported models
+```text
+Select Date
+    │
+    ▼
+Select Phoenix Tile
+    │
+    ▼
+Select Model
+    │
+    ▼
+Generate Prediction
+    │
+    ├───────────────┐
+    ▼               ▼
+Model Comparison   Scenario Simulator
+    │               │
+    │               ├── Tree Canopy
+    │               ├── Cool Roof
+    │               └── Cool Pavement
+    │
+    ▼
+Decision-Support Output
+```
+
+The frontend obtains available dates, tiles, models, and interventions through backend discovery endpoints rather than relying on hardcoded production metadata.
+
+### Supported models
 
 * Linear Regression
 * Random Forest
 
-The current application operates on dates and tiles represented in the available environmental dataset.
+---
+
+# Backend API
+
+The FastAPI backend exposes the core application operations.
+
+### Discovery
+
+```text
+GET /api/dates
+GET /api/tiles
+GET /api/models
+GET /api/interventions
+```
+
+### Prediction
+
+```text
+POST /api/predict
+```
+
+### Scenario simulation
+
+```text
+POST /api/scenario
+```
+
+### Model comparison
+
+```text
+GET /api/compare
+```
+
+The backend is the authoritative source for available dates, tiles, model names, predictions, and scenario calculations.
 
 ---
 
@@ -415,117 +636,164 @@ The current application operates on dates and tiles represented in the available
 
 ThermaML is not intended to introduce a new machine learning algorithm.
 
-Its contribution is an integrated and reproducible workflow that connects:
+Its contribution is an integrated and reproducible framework connecting:
 
-1. environmental observations
-2. date-aligned feature engineering
-3. daily thermal target construction
-4. classical regression modeling
-5. chronological temporal validation
-6. comparison against a naive baseline
-7. evidence-based heat-mitigation scenarios
-8. interactive decision support
+1. FortyGuard environmental observations
+2. date-aligned data processing
+3. daily target construction
+4. environmental feature engineering
+5. classical machine learning
+6. chronological model evaluation
+7. naive-baseline comparison
+8. evidence-based intervention scenarios
+9. planning-cost estimation
+10. interactive decision support
 
-This provides a foundation for extending the study toward larger spatial datasets, richer temporal coverage, uncertainty-aware prediction, and spatial/spatiotemporal modeling.
+This architecture creates a foundation for future research involving larger spatial datasets, longer temporal coverage, uncertainty quantification, and spatial/spatiotemporal modeling.
 
 ---
 
-# Spatial Modeling: Future Direction
+# Spatial Modeling and Future Extension
 
-Spatial machine learning is a natural extension of the current study because the environmental observations are associated with geographic tile locations.
+Urban thermal conditions are inherently spatial, making spatial modeling a natural extension of ThermaML.
 
-A lightweight Graph Neural Network was considered as an exploratory direction. However, the current study does not report GNN results or claim spatial generalization.
+The current study includes six geographically distinct Phoenix tiles. These locations provide an initial basis for future spatial experiments but are insufficient for claiming city-scale spatial generalization.
 
-The six selected Phoenix tiles provide a useful starting point for spatial experimentation, but a substantially larger spatial dataset would be required to evaluate spatial generalization reliably.
+A lightweight Graph Neural Network was considered as an exploratory direction.
 
-Future spatial modeling could investigate:
+Future work can investigate:
 
-* graph-based representations of urban tiles
+* larger spatial tile networks
+* graph-based urban representations
 * spatial holdout validation
 * spatiotemporal models
 * cross-location generalization
-* larger metropolitan grids
+* metropolitan-scale datasets
+
+The current release does not report GNN performance and does not claim GNN-based spatial generalization.
 
 ---
 
-# Research Limitations
+# Limitations
 
-The current findings should be interpreted within the scope of the available dataset.
+The results should be interpreted within the scope of the current experimental design.
 
 ### Limited spatial coverage
 
-The study contains only six Phoenix tiles. The results therefore do not establish city-wide predictive performance.
+The study contains only six Phoenix tiles.
+
+Therefore, the reported model performance does not establish city-wide predictive capability.
 
 ### Limited temporal coverage
 
-The curated dataset contains 37 observation dates. More dates would provide a stronger basis for evaluating seasonal and temporal generalization.
+The curated dataset contains 37 observation dates.
+
+A longer observation period would provide stronger evidence for seasonal and temporal generalization.
 
 ### Daily target resolution
 
-The current target is a 24-hour mean apparent temperature. The system does not currently provide hourly temperature forecasts.
+The target is the 24-hour mean apparent temperature.
+
+The current system does not provide hourly temperature forecasting.
 
 ### Observed-date inference
 
-The current inference system operates on dates represented in the available environmental dataset. It should not be described as an arbitrary future-date forecasting system.
+The current inference system operates on dates represented in the available environmental dataset.
 
-### Intervention uncertainty
+It should not be interpreted as an arbitrary future-date forecasting service.
 
-The intervention layer uses evidence-based approximations. It does not estimate causal intervention effects from the ML training data.
+### Intervention assumptions
+
+Intervention effects are evidence-based scenario approximations rather than causal estimates learned from the ML dataset.
+
+### Small sample size
+
+With 160 tile-date records, the current dataset is appropriate for a controlled prototype but remains small for drawing broad generalization claims.
 
 ### Spatial generalization
 
-No claim is made that a model trained on the six selected tiles will generalize to other Phoenix neighborhoods or other cities.
+No claim is made that a model trained on the six selected Phoenix tiles will generalize to other neighborhoods or cities.
 
 ---
 
 # Future Research
 
-Several extensions can build on the current framework:
+The current framework can be extended through:
 
-* Expand the number of spatial tiles.
-* Increase the temporal observation period.
-* Evaluate spatial holdout performance.
-* Investigate spatiotemporal machine learning models.
-* Explore Graph Neural Networks on larger spatial grids.
-* Add uncertainty quantification and calibrated prediction intervals.
-* Evaluate transferability across additional urban environments.
-* Incorporate additional urban morphology and land-surface features.
-* Develop more rigorous physically informed intervention models.
-* Investigate causal methods for estimating intervention effects.
+* additional FortyGuard observations
+* larger spatial tile coverage
+* longer temporal observation periods
+* spatial holdout validation
+* spatiotemporal machine learning
+* Graph Neural Networks on larger spatial grids
+* uncertainty quantification
+* calibrated prediction intervals
+* cross-city transfer evaluation
+* urban morphology features
+* land-surface characteristics
+* physically informed intervention models
+* causal inference for mitigation effects
 
-These extensions would allow the system to move from a small empirical prototype toward a more comprehensive urban heat modeling framework.
+These extensions could move ThermaML from a small empirical prototype toward a broader urban thermal modeling and decision-support framework.
 
 ---
 
 # Reproducibility
 
-## Backend
+## Requirements
+
+The backend requires Python and the dependencies listed in the backend project.
+
+The frontend requires Node.js and npm.
+
+---
+
+## Start the Backend
 
 ```bash
 cd "ThermaML backend"
+
 python -m uvicorn api.server:app --host 0.0.0.0 --port 8000
 ```
 
-The FastAPI backend provides model discovery, date/tile discovery, prediction, model comparison, and scenario simulation endpoints.
+The API will be available at:
 
-## Frontend
+```text
+http://localhost:8000
+```
+
+---
+
+## Start the Frontend
 
 ```bash
 cd frontend
+
 npm install
 npm run dev
 ```
 
-The frontend uses:
+The Vite development server will provide the interactive dashboard.
+
+The frontend API configuration is controlled through:
+
+```text
+frontend/.env
+```
+
+Example:
 
 ```text
 VITE_API_URL=http://localhost:8000/api
 ```
 
-## Tests
+---
+
+## Run Tests
 
 ```bash
 cd "ThermaML backend"
+
 python -m pytest -q
 ```
 
@@ -540,15 +808,33 @@ ThermaML/
 │
 ├── ThermaML backend/
 │   ├── api/
+│   │   └── server.py
+│   │
 │   ├── models/
+│   │   ├── inference.py
+│   │   └── ...
+│   │
 │   ├── scenario/
+│   │   └── interventions.py
+│   │
 │   ├── pipelines/
+│   │   └── ...
+│   │
 │   ├── tests/
+│   │   └── ...
+│   │
 │   ├── trained_models/
+│   │   └── ...
+│   │
 │   └── README.md
 │
 ├── frontend/
 │   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── services/
+│   │   └── ...
+│   │
 │   ├── public/
 │   └── package.json
 │
@@ -562,33 +848,73 @@ ThermaML/
 
 # Scientific References
 
-### Urban forestry and cool roofs
+## Urban Forestry and Cool Roofs
 
-Middel, A., Chhetri, N., & Quay, R. (2015). *Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods.*
+Middel, A., Chhetri, N., & Quay, R. (2015).
 
-DOI: `10.1016/j.ufug.2014.09.010`
+*Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods.*
+
+DOI:
+
+`10.1016/j.ufug.2014.09.010`
 
 [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S161886671400106X)
 
 [Arizona State University Research Record](https://asu.elsevierpure.com/en/publications/urban-forestry-and-cool-roofs-assessment-of-heat-mitigation-strat/)
 
-### Machine learning and urban heat
+---
 
-Rahmatollahi et al. (2026). *Machine learning and attribution of urban heat in the Phoenix metropolitan area.*
+## Cool Roof Guidance
 
-### Decision support for heat management
+U.S. Department of Energy.
 
-Amaripadath et al. (2024). *Multi-criteria decision support for heat stress management.*
+*Cool Roofs Guide.*
 
-### Cool roofs
+https://www1.eere.energy.gov/buildings/publications/pdfs/corporate/coolroofguide.pdf
 
-U.S. Department of Energy. *Cool Roofs Guide.*
+---
 
-### Cool pavement
+## Cool Pavement
 
-City of Phoenix. *Cool Pavement Program.*
+City of Phoenix.
 
-EPA. *Heat Island Community Actions Database.*
+*Cool Pavement Program.*
+
+https://www.phoenix.gov/administration/departments/streets/initiatives/pavement-maintenance/cool-pavement-program.html
+
+U.S. Environmental Protection Agency.
+
+*Heat Island Community Actions Database.*
+
+https://www.epa.gov/heatislands/heat-island-community-actions-database
+
+City of Phoenix.
+
+*Cool Pavement feasibility/planning documentation.*
+
+https://www.phoenix.gov/content/dam/phoenix/streetssite/documents/3rd%20st_lincoln%20st%20to%20washington%20st_design%20concept%20report.pdf
+
+---
+
+## Urban Heat and Machine Learning
+
+Rahmatollahi et al. (2026).
+
+*Machine learning and attribution of urban heat in the Phoenix metropolitan area.*
+
+---
+
+## Heat-Stress Decision Support
+
+Amaripadath et al. (2024).
+
+*Multi-criteria decision support for heat stress management.*
+
+---
+
+# Citation
+
+If you use ThermaML, its dataset-processing methodology, model evaluation framework, or intervention scenario design in academic work, please cite the repository and the underlying scientific sources listed above.
 
 ---
 
