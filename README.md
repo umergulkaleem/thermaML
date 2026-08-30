@@ -7,7 +7,7 @@ Built on the FortyGuard API's street-level temperature data, ThermaML predicts d
 
 **Live Demo →** `https://therma-ml.vercel.app/`  
 **Track:** Track 1 — Resilient Cities & Infrastructure · Secondary: Track 5 — Model Designing  
-**Study Area:** Phoenix, Arizona · Jan 2023 – Jan 2024  
+**Study Area:** Phoenix · Jan 2023 – Jan 2024  
 **Stack:** Python · FastAPI · React · Vite · FortyGuard Environmental API
 
 ---
@@ -73,7 +73,7 @@ Interactive Decision Dashboard (React + FastAPI)
 | Component | Detail |
 |---|---|
 | Data source | FortyGuard Environmental API |
-| Study region | Phoenix, Arizona |
+| Study region | Phoenix|
 | Spatial units | 6 urban tiles (IDs: 7, 426, 8, 844, 420, 814) |
 | Observation dates | 37 |
 | Date range | 2023-01-01 → 2024-01-28 |
