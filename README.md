@@ -5,7 +5,7 @@
 
 Built on the FortyGuard API's street-level temperature data, ThermaML predicts daily thermal conditions across urban tiles and tells planners exactly which interventions to buy, where to deploy them, and what temperature drop to expect per dollar spent — backed by peer-reviewed science, not guesswork.
 
-**Live Demo →** `https://github.com/umergulkaleem/thermaML.git`  
+**Live Demo →** `https://therma-ml.vercel.app/`  
 **Track:** Track 1 — Resilient Cities & Infrastructure · Secondary: Track 5 — Model Designing  
 **Study Area:** Phoenix, Arizona · Jan 2023 – Jan 2024  
 **Stack:** Python · FastAPI · React · Vite · FortyGuard Environmental API
