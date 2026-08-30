@@ -1,4 +1,5 @@
-**Submission Note:** > This repository was created before the hackathon
+**Submission Note:** 
+> This repository was created before the hackathon
 > kickoff date solely to add a teammate as a collaborator. All project
 > commits, code, data collection, model training, and documentation were
 > completed after the official kickoff. No project work exists in this
